@@ -16,7 +16,7 @@ function calculateModal () {
         var h = parseFloat($( window ).height());
         
         var wrapModal = h - (head + footer);
-        var bodyModal = h - ( head + footer + headModal + hr + 15);
+        var bodyModal = h - ( head + footer + headModal + hr + 15 - 150);
 
         $(".modal-body").height(bodyModal);
         $(".wrap-modal").height(wrapModal);
