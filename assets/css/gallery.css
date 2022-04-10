@@ -1,0 +1,255 @@
+
+.container-gallery {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.container-gallery .box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.container-gallery .box .dream {
+	display: flex;
+	flex-direction: column;
+	width: 32.5%;
+}
+
+.container-gallery .box .dream .item-gallery .heart-red img {
+	width: 20px;
+	height: auto;
+}
+
+.container-gallery .box .dream .item-gallery .heart-white img {
+	width: 20px;
+	height: auto;
+}
+
+.container-gallery .box .dream img {
+	width: 100%;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+
+.container-gallery .btn {
+	margin: 40px 0 70px 0;
+	background: #222;
+	padding: 15px 40px;
+	border-radius: 5px;
+}
+
+.container-gallery .btn a {
+	color: #fff;
+	font-size: 1.2em;
+	text-decoration: none;
+	font-weight: bolder;
+	letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 769px) {
+	.container-gallery .box {
+		flex-direction: column;
+	}
+	.container-gallery .box .dream {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 643px) {
+	.container-gallery .heading {
+		width: 100%;
+	}
+	.container-gallery .heading h3 {
+		font-size: 1em;
+	}
+}
+.item-gallery {
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 0.8s;
+}
+
+/* item */
+.inner {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg,transparent,black);
+    padding-top: 50px;
+}
+
+.icon-plus {
+    background-image: url("../../assets/imgs/icons/icon_heart_white.png");
+    width:25px;
+    height:25px;
+    background-repeat:no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+    padding: 5px;
+}
+
+.icon-plus:hover {
+    /* background-color: #dddddd; */
+}
+
+.icon-plus.icon-minus {
+    background-image: url("../../assets/imgs/icons/icon_heart_red.png");
+    width:25px;
+    height:25px;
+    background-repeat:no-repeat;
+    background-size: 25px 25px;
+    background-position: center;
+    padding: 5px;
+}
+
+.icon-plus.icon-minus:hover {
+    /* background-color: #dddddd; */
+}
+
+.favourite {
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+}
+
+
+.wrap-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.right-filter {
+    width: 30px;
+    height: auto;
+}
+
+.wrap-left-filter {
+    display: flex;
+    align-items: center;
+}
+
+.filter {
+    margin-right: 15px;
+    padding: 5px;
+    background: transparent;
+    border: 1px solid #d2d2d7;
+}
+
+.modal-top {
+    width: 30px;
+    height: auto;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.modal-top button {
+    background: transparent;
+}
+
+
+sup {
+    /* vertical-align: super; */
+	font-size: 12px;
+}
+.front-card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.wrap-front-card {
+	/* position: absolute;
+   	bottom: 15px;
+    left: 0;
+	width: 100%;
+	height: 15%;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	background: linear-gradient(0deg,rgba(0,0,0,.6),transparent); */
+}
+
+.wrap-top-card {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+
+}
+
+.wrap-bottom-card {
+	position: absolute;
+   	bottom: 15px;
+    left: 0;
+	width: 100%;
+	height: 45px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	background: linear-gradient(0deg,rgba(0,0,0,.6),transparent);
+}
+
+.front-card-left {
+	padding-left: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.price {
+	padding-right: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.price span {
+	font-size: 12px;
+}
+
+.front-card-right {
+	display: flex;
+	align-items: flex-end;;
+}
+
+.inner {
+
+}
+
+.shopping,
+.menu {
+	padding-right: 10px;
+}
+
+.infor button,
+.menu button,
+.shopping button {
+	background: transparent;
+	width: 25px;
+	height: 25px;
+}
+
+
+
+
+
+
+.back-card {
+	position: absolute;
+	top: 0;
+	width: 100%;
+    height: 100%;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+}
