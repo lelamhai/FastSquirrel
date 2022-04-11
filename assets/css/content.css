@@ -3,7 +3,7 @@
 }
 
 .wrap-modal {
-    position: relative;
+    /* position: relative; */
 }
 
 .modal-header {
@@ -91,7 +91,7 @@
     -ms-overflow-style: none; 
     scrollbar-width: none; 
     scroll-behavior: smooth;
-    /* padding-top: 15px; */
+    padding-top: 15px;
 
 }
 
