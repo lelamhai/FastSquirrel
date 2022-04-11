@@ -9,17 +9,17 @@ function onResize () {
 
 function calculateModal () {
     $(document).ready(function(){
-        var head = parseFloat($("#header").height());
-        var footer = parseFloat($("#footer").height());
-        var headModal = parseFloat($(".modal-header").height());
-        var hr = parseFloat($(".hr").outerHeight());
-        var h = parseFloat($( window ).height());
+        // var head = parseFloat($("#header").height());
+        // var footer = parseFloat($("#footer").height());
+        // var headModal = parseFloat($(".modal-header").height());
+        // var hr = parseFloat($(".hr").outerHeight());
+        // var h = parseFloat($( window ).height());
         
-        var wrapModal = h - (head + footer);
-        var bodyModal = h - ( head + footer + headModal + hr + 15 - 150);
+        // var wrapModal = h - (head + footer);
+        // var bodyModal = h - ( head + footer + headModal + hr + 15 - 150);
 
-        $(".modal-body").height(bodyModal);
-        $(".wrap-modal").height(wrapModal);
+        // $(".modal-body").height(bodyModal);
+        // $(".wrap-modal").height(wrapModal);
     });
 }
 
