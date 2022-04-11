@@ -1,6 +1,6 @@
 // ========== load screen ========== \\
 function loadPage() {
-    // calculateModal();
+    calculateModal();
 }
 // ========== resize screen ========== \\
 function onResize () {
@@ -9,6 +9,10 @@ function onResize () {
 
 function calculateModal () {
     $(document).ready(function(){
+        var height = parseFloat($(".modal-body").height());
+        $(".modal-body").height(height - 40);
+        // console.log(height);
+
         // var head = parseFloat($("#header").height());
         // var footer = parseFloat($("#footer").height());
         // var headModal = parseFloat($(".modal-header").height());
