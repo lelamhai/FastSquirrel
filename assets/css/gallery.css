@@ -94,10 +94,6 @@
     padding: 5px;
 }
 
-.icon-plus:hover {
-    /* background-color: #dddddd; */
-}
-
 .icon-plus.icon-minus {
     background-image: url("../../assets/imgs/icons/icon_heart_red.png");
     width:25px;
@@ -107,17 +103,6 @@
     background-position: center;
     padding: 5px;
 }
-
-.icon-plus.icon-minus:hover {
-    /* background-color: #dddddd; */
-}
-
-.favourite {
-    position: absolute;
-    bottom: 35px;
-    right: 20px;
-}
-
 
 .wrap-filter {
     display: flex;
@@ -176,7 +161,10 @@ sup {
 	position: absolute;
 	top: 10px;
 	right: 10px;
+}
 
+.wrap-top-card .infor {
+	display: flex;
 }
 
 .wrap-bottom-card {
@@ -226,8 +214,8 @@ sup {
 	align-items: flex-end;;
 }
 
-.inner {
-
+.infor button {
+	margin-left: 10px;
 }
 
 .shopping,

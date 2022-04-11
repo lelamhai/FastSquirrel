@@ -3,10 +3,9 @@ function loadPage() {
     calculateModal();
 }
 
-function onResize () {
-    // $(".modal-body").css("height", "100%");
-    // calculateModal();
-}
+// function onResize () {
+//     location.reload();
+// }
 
 window.addEventListener("orientationchange", function() {
     location.reload();
@@ -40,8 +39,23 @@ $(document).ready(function(){
 
     // ========== Item gallery ========== \\
     $(".item-gallery").click(function(event){
-        if($(event.target).attr('class') != "noflip")
+        var text = $(event.target).attr('class');
+        // console.log($(event.target).attr('class'));
+
+        if(text != null)
         {
+            var listText = text.split(" ");
+            if(listText[0] != "noflip")
+            {
+                if($(this).hasClass( "flip" ))
+                {
+                    $(this).removeClass("flip");
+                } else {
+                    $(this).addClass("flip");
+                }
+            }
+            
+        } else {
             if($(this).hasClass( "flip" ))
             {
                 $(this).removeClass("flip");
@@ -49,6 +63,7 @@ $(document).ready(function(){
                 $(this).addClass("flip");
             }
         }
+     
     });
 
     // ========== Popup ========== \\
@@ -91,8 +106,6 @@ $(document).ready(function(){
 
 
 });
-
-
 
 
 
