@@ -1,10 +1,10 @@
 // ========== load screen ========== \\
 function loadPage() {
-    calculateModal();
+    // calculateModal();
 }
 // ========== resize screen ========== \\
 function onResize () {
-    calculateModal();
+    // calculateModal();
 }
 
 function calculateModal () {
