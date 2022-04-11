@@ -1,11 +1,27 @@
 // ========== load screen ========== \\
 function loadPage() {
+    calculateModal();
+}
+
+function onResize () {
+    // $(".modal-body").css("height", "100%");
+    // calculateModal();
+}
+
+window.addEventListener("orientationchange", function() {
+    location.reload();
+});
+
+function calculateModal () {
     $(document).ready(function(){
         var head = parseFloat($(".modal-header").height());
         var height = parseFloat($(".modal-body").height());
         $(".modal-body").height(height - head);
     });
 }
+
+
+
 
 $(document).ready(function(){
     // ========== owl-carousel ========== \\
