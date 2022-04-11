@@ -170,15 +170,6 @@ sup {
 }
 
 .wrap-front-card {
-	/* position: absolute;
-   	bottom: 15px;
-    left: 0;
-	width: 100%;
-	height: 15%;
-	display: flex;
-    justify-content: space-between;
-    align-items: center;
-	background: linear-gradient(0deg,rgba(0,0,0,.6),transparent); */
 }
 
 .wrap-top-card {
@@ -193,7 +184,7 @@ sup {
    	bottom: 15px;
     left: 0;
 	width: 100%;
-	height: 45px;
+	height: 50px;
 	display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,8 +194,20 @@ sup {
 .front-card-left {
 	padding-left: 10px;
 	color: #fff;
-	font-size: 20px;
 	font-weight: bold;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.titile-front-left {
+	font-size: 20px;
+	text-transform: capitalize;
+}
+
+.author-front-left {
+	font-size: 15px
+	text-transform: capitalize;
 }
 
 .price {
