@@ -86,12 +86,12 @@
 }
 
 .modal-body {
-    height: 650.5px;
-    padding-top: 15px;
-    overflow: auto;
-    -ms-overflow-style: none; /* IE 11 */
-    scrollbar-width: none; /* Firefox 64 */
-    scroll-behavior: smooth;
+    /* height: 650.5px; */
+    /* padding-top: 15px; */
+    /* overflow: auto;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    scroll-behavior: smooth; */
 }
 
 .modal-body::-webkit-scrollbar {
