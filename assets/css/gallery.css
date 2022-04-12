@@ -125,16 +125,17 @@
 
 .filter {
     margin-right: 15px;
-    padding: 5px;
+    padding: 5px 10px;
     background: transparent;
     border: 1px solid #d2d2d7;
+	height: 40px;
 }
 
 .modal-top {
     width: 30px;
     height: auto;
     position: absolute;
-    bottom: 20px;
+    bottom: 90px;
     right: 20px;
     display: none;
 }
@@ -159,12 +160,18 @@ sup {
 
 .wrap-top-card {
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 50px;
+	background: linear-gradient(180deg,rgba(0,0,0,.6),transparent);
 }
 
 .wrap-top-card .infor {
 	display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 10px;
 }
 
 .wrap-bottom-card {
@@ -215,7 +222,7 @@ sup {
 }
 
 .infor button {
-	margin-left: 10px;
+	margin-left: 15px;
 }
 
 .shopping,
