@@ -3,7 +3,7 @@ function loadPage() {
     calculateModal();
 }
 
-alert($( window ).width());
+// alert($( window ).width());
 
 // function onResize () {
 //     location.reload();
@@ -29,6 +29,18 @@ $(document).ready(function(){
     $('.owl-carousel').owlCarousel({
         items: 6,
         dots: false,
+
+        responsive:{
+            0:{
+                items:4,
+            },
+            767:{
+                items:4,
+            },
+        }
+
+
+
         // mouseDrag: false,
         // touchDrag: false
     });

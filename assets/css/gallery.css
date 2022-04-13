@@ -50,23 +50,7 @@
 	letter-spacing: 3px;
 }
 
-@media only screen and (max-width: 769px) {
-	.container-gallery .box {
-		flex-direction: column;
-	}
-	.container-gallery .box .dream {
-		width: 100%;
-	}
-}
 
-@media only screen and (max-width: 643px) {
-	.container-gallery .heading {
-		width: 100%;
-	}
-	.container-gallery .heading h3 {
-		font-size: 1em;
-	}
-}
 .item-gallery {
 	position: relative;
 	transform-style: preserve-3d;

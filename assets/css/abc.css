@@ -11,11 +11,11 @@
 }
   
 .column img {
-    margin-top: 8px;
+    margin-bottom: 8px;
     vertical-align: middle;
 }
 
-  .front-card {
+.front-card {
     position: absolute;
     top: 0;
     left: 0;
@@ -34,16 +34,15 @@
     opacity: 0;
 }
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+ 
+
+@media (max-width: 767px) {
+    .row {
+        padding: 0;
+    }
     .column {
-      flex: 50%;
-      max-width: 50%;
+        flex: 100%;
+        max-width: 100%;
     }
 }
 
-@media only screen and (min-width: 100px) and (max-width: 480px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }   
-}
