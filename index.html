@@ -12,6 +12,37 @@
       <link rel="stylesheet" href="./assets/css/gallery.css?v=18">
       <link rel="stylesheet" href="./assets/css/style.flipster.css">
       <link rel="stylesheet" href="./assets/css/animation.css">
+      <link rel="stylesheet" href="./assets/css/abc.css">
+      <style>
+         .flip {
+             transform: rotateY(180deg);
+         }
+ 
+         .item-gallery {
+             position: relative;
+             transition: transform 0.6s;
+             transform-style: preserve-3d;
+         }
+ 
+         .front-card {
+             position: absolute;
+             top: 0;
+             left: 0;
+             -webkit-backface-visibility: hidden;
+         }
+ 
+         .back-card {
+             position: absolute;
+             top: 0;
+             left: 0;
+             -webkit-backface-visibility: hidden;
+             transform: rotateY(180deg);
+         }
+ 
+         .bg {
+             opacity: 0;
+         }
+     </style>
    </head>
    <body onload="loadPage()">
 
@@ -88,802 +119,140 @@
                               </div>
                            </div>
                         </div>
-                        <div class="container-gallery">
-                           <div class="box">
-                              <div class="dream">
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/1f.jpg">
-                                       <div class="wrap-front-card">
+                        
 
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="noflip titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="noflip author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/1b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="noflip titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="noflip author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right">
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
+                        <div class="row">
+                           <div class="column">
+                              <div class="item-gallery">
+                                   <img src="./assets/imgs/gallery/1f.jpg" style="width: 100%" class="bg">
+                                   <div class="front-card">
+                                       <img src="./assets/imgs/gallery/1f.jpg" style="width: 100%">
+                                   </div>
+                                   <div class="back-card">
+                                       <img src="./assets/imgs/gallery/1b.jpg" style="width: 100%">
+                                   </div>
+                              </div>
+                   
+                              <div class="item-gallery">
+                                 <img src="./assets/imgs/gallery/2f.jpg" style="width: 200%" class="bg">
+                                 <div class="front-card">
+                                     <img src="./assets/imgs/gallery/2f.jpg" style="width: 100%">
                                  </div>
-
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/5f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="noflip titile-front-left">Hoa Đẹp Lắm Cơ 111</b>
-                                                <b class="noflip author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right ">
-                                                <div class="shopping ">
-                                                   <button class=""><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/5b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="noflip titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="noflip author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right">
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
+                                 <div class="back-card">
+                                     <img src="./assets/imgs/gallery/2b.jpg" style="width: 100%">
                                  </div>
-
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/9f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="noflip titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="noflip author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right">
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/9b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="noflip titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="noflip author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right">
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                 </div>
-
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/4f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="noflip titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="noflip author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right">
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/4b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                 </div>
-
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/6f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/6b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                 </div>
-                                 
                               </div>
 
-                              <div class="dream">
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/2f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/2b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
+                              <div class="item-gallery">
+                                 <img src="./assets/imgs/gallery/3f.jpg" style="width: 100%" class="bg">
+                                 <div class="front-card">
+                                    <img src="./assets/imgs/gallery/3f.jpg" style="width: 100%">
                                  </div>
-
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/4f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/4b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
+                                 <div class="back-card">
+                                    <img src="./assets/imgs/gallery/3b.jpg" style="width: 100%">
                                  </div>
-
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/7f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/7b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                 </div>
-
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/1f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/1b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                 </div>
-
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/5f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/5b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                 </div>
-                                
-                              </div>
-
-                              <div class="dream">
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/6f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/6b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                 </div>
-
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/3f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/3b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                 </div>
-
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/8f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/8b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                 </div>
-
-                                 <div class="item-gallery">
-                                    <div class="front-card">
-                                       <img src="./assets/imgs/gallery/2f.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                                <div class="noflip favourite icon-plus"></div>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                    <div class="back-card">
-                                       <img src="./assets/imgs/gallery/2b.jpg">
-                                       <div class="wrap-front-card">
-                                          <div class="wrap-top-card">
-                                             <div class="infor">
-                                                <button><img src="./assets/imgs/icons/icon_info_card.png" alt="" class="noflip"></button>
-                                             </div>
-                                          </div>
-
-                                          <div class="wrap-bottom-card">
-                                             <div class="front-card-left">
-                                                <b class="titile-front-left">Hoa Đẹp Lắm Cơ</b>
-                                                <b class="author-front-left">Lê Lam Hải</b> 
-                                             </div>
-
-                                             <div class="front-card-right noflip">
-                                                <div class="shopping">
-                                                   <button><img src="./assets/imgs/icons/icon_shoppingcart.png" alt="" class="noflip"></button>
-                                                </div>
-                                               
-                                                <div class="noflip price"><p class="noflip">40.000 <span class="noflip">VNĐ</span></p></div>
-                                             </div>   
-                                          </div>
-
-                                       </div>
-                                    </div>
-                                 </div>
-
                               </div>
                            </div>
-                        </div>
+
+                           <div class="column">
+                              <div class="item-gallery">
+                                   <img src="./assets/imgs/gallery/4f.jpg" style="width: 100%" class="bg">
+                                   <div class="front-card">
+                                       <img src="./assets/imgs/gallery/4f.jpg" style="width: 100%">
+                                   </div>
+                                   <div class="back-card">
+                                       <img src="./assets/imgs/gallery/4b.jpg" style="width: 100%">
+                                   </div>
+                              </div>
+                   
+                              <div class="item-gallery">
+                                 <img src="./assets/imgs/gallery/5f.jpg" style="width: 100%" class="bg">
+                                 <div class="front-card">
+                                     <img src="./assets/imgs/gallery/5f.jpg" style="width: 100%">
+                                 </div>
+                                 <div class="back-card">
+                                     <img src="./assets/imgs/gallery/5b.jpg" style="width: 100%">
+                                 </div>
+                              </div>
+
+                              <div class="item-gallery">
+                                 <img src="./assets/imgs/gallery/6f.jpg" style="width: 100%" class="bg">
+                                 <div class="front-card">
+                                    <img src="./assets/imgs/gallery/6f.jpg" style="width: 100%">
+                                 </div>
+                                 <div class="back-card">
+                                    <img src="./assets/imgs/gallery/6b.jpg" style="width: 100%">
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="column">
+                              <div class="item-gallery">
+                                   <img src="./assets/imgs/gallery/1f.jpg" style="width: 100%" class="bg">
+                                   <div class="front-card">
+                                       <img src="./assets/imgs/gallery/1f.jpg" style="width: 100%">
+                                   </div>
+                                   <div class="back-card">
+                                       <img src="./assets/imgs/gallery/1b.jpg" style="width: 100%">
+                                   </div>
+                              </div>
+                   
+                              <div class="item-gallery">
+                                 <img src="./assets/imgs/gallery/7f.jpg" style="width: 100%" class="bg">
+                                 <div class="front-card">
+                                     <img src="./assets/imgs/gallery/7f.jpg" style="width: 100%">
+                                 </div>
+                                 <div class="back-card">
+                                     <img src="./assets/imgs/gallery/7b.jpg" style="width: 100%">
+                                 </div>
+                              </div>
+
+                              <div class="item-gallery">
+                                 <img src="./assets/imgs/gallery/8f.jpg" style="width: 100%" class="bg">
+                                 <div class="front-card">
+                                    <img src="./assets/imgs/gallery/8f.jpg" style="width: 100%">
+                                 </div>
+                                 <div class="back-card">
+                                    <img src="./assets/imgs/gallery/8b.jpg" style="width: 100%">
+                                 </div>
+                              </div>
+                           </div>
+
+
+                           <div class="column">
+                              <div class="item-gallery">
+                                   <img src="./assets/imgs/gallery/9f.jpg" style="width: 100%" class="bg">
+                                   <div class="front-card">
+                                       <img src="./assets/imgs/gallery/9f.jpg" style="width: 100%">
+                                   </div>
+                                   <div class="back-card">
+                                       <img src="./assets/imgs/gallery/9b.jpg" style="width: 100%">
+                                   </div>
+                              </div>
+                   
+                              <div class="item-gallery">
+                                 <img src="./assets/imgs/gallery/1f.jpg" style="width: 100%" class="bg">
+                                 <div class="front-card">
+                                     <img src="./assets/imgs/gallery/1f.jpg" style="width: 100%">
+                                 </div>
+                                 <div class="back-card">
+                                     <img src="./assets/imgs/gallery/1b.jpg" style="width: 100%">
+                                 </div>
+                              </div>
+
+                              <div class="item-gallery">
+                                 <img src="./assets/imgs/gallery/2f.jpg" style="width: 100%" class="bg">
+                                 <div class="front-card">
+                                    <img src="./assets/imgs/gallery/2f.jpg" style="width: 100%">
+                                 </div>
+                                 <div class="back-card">
+                                    <img src="./assets/imgs/gallery/2b.jpg" style="width: 100%">
+                                 </div>
+                              </div>
+                           </div>
+                       </div>
+
                      </div>
                      <div class="modal-top">
                         <button id="button-top"><img src="./assets/imgs/icons/icon_uparrow.png" alt=""></button>
