@@ -34,13 +34,11 @@ $(document).ready(function(){
             0:{
                 items:4,
             },
+            
             767:{
                 items:4,
             },
         }
-
-
-
         // mouseDrag: false,
         // touchDrag: false
     });
