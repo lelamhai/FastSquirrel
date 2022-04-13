@@ -38,6 +38,10 @@ $(document).ready(function(){
             767:{
                 items:4,
             },
+
+            768:{
+                items:6,
+            },
         }
         // mouseDrag: false,
         // touchDrag: false
