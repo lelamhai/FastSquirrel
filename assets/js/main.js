@@ -3,6 +3,8 @@ function loadPage() {
     calculateModal();
 }
 
+alert($( window ).width());
+
 // function onResize () {
 //     location.reload();
 // }
