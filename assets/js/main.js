@@ -89,13 +89,14 @@ $(document).ready(function(){
 
     $(".modal-close").click(function(){
         $('.wrap-body').css("display", "none");
-        $('.item-carousel').removeClass( "fs-active" )
+        $('.item-carousel').removeClass( "fs-active" );
     })
 
     // ========== Menu ========== \\
     $(".item-carousel").click(function(){
         if(!$(this).hasClass( "fs-active" ))
         {
+            $(".item-carousel").removeClass( "fs-active" );
             $(this).addClass("fs-active");
         } 
     })

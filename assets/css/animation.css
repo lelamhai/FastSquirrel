@@ -1,3 +1,7 @@
 .flip {
   transform: rotateY(180deg);
 }
+
+.flip .front-card {
+  z-index: -1;
+}
