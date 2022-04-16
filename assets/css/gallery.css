@@ -1,28 +1,35 @@
-.row {
+.row,
+.row-tablet,
+.row-mobile {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-  }
-  /* Create four equal columns that sits next to each other */
+}
+
+
+/* Create four equal columns that sits next to each other */
 .column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
 }
-  
-.column img {
-    margin-bottom: 8px;
-    vertical-align: middle;
+
+.column-tablet {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
 }
 
-@media (max-width: 767px) {
-    .row {
-        padding: 0;
-    }
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
+.column-mobile {
+    flex: 100%;
+    max-width: 100%;
+}
+
+.column img,
+.column-tablet img,
+.column-mobile img {
+    margin-bottom: 8px;
+    vertical-align: middle;
 }
 
 /* frame */
@@ -30,6 +37,8 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: auto;
     -webkit-backface-visibility: hidden;
 }
 
@@ -39,6 +48,8 @@
     left: 0;
     transform: rotateY(180deg);
     -webkit-backface-visibility: hidden;
+    width: 100%;
+    height: auto;
 }
 
 .frame-gallery {
@@ -170,3 +181,89 @@ sup {
 	height: 25px;
 }
 
+
+/* @media (max-width: 767px) {
+    .row {
+        padding: 0;
+    }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+} */
+
+/* ==========================================================================
+   Responsive CSS Landscape Tablet
+   ========================================================================== */
+   @media only screen and (min-width: 960px) and (max-width: 1240px) {
+    .row {
+        display: none;
+    }
+
+    .row-tablet {
+        display: block;
+    }
+
+    .row-mobile {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+ Responsive CSS Portrait Tablet
+ ========================================================================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .row {
+        display: none;
+    }
+
+    .row-tablet {
+        display: flex;
+    }
+
+    .row-mobile {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+ Responsive CSS Landscape Mobile
+ ========================================================================== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .row {
+        display: none;
+    }
+
+    .row-tablet {
+        display: none;
+    }
+
+    .row-mobile {
+        display: flex;
+    }
+}
+
+/* ==========================================================================
+ Responsive CSS Portrait Mobile
+ ========================================================================== */
+@media only screen and (min-width: 100px) and (max-width: 560px) {
+    /*.row {
+        padding: 0;
+    }
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    } */
+
+    .row {
+        display: none;
+    }
+
+    .row-tablet {
+        display: none;
+    }
+
+    .row-mobile {
+        display: flex;
+    }
+}
