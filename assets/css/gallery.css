@@ -52,6 +52,10 @@
 	transition: transform 0.8s;
 }
 
+.favourite {
+    cursor: pointer;
+}
+
 .icon-plus {
     background-image: url("../../assets/imgs/icons/icon_heart_white.png");
     width:25px;
