@@ -201,7 +201,7 @@ sup {
     }
 
     .row-tablet {
-        display: block;
+        display: flex;
     }
 
     .row-mobile {
