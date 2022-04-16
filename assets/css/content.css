@@ -113,6 +113,21 @@
     align-items: center;
 }
 
+.wrap-left-filter select {
+    background: url("../../assets/imgs/icons/icon_select.png") no-repeat;
+    background-size: 10px 10px;
+    background-position: calc(100% - 0.75rem) center !important;
+    -moz-appearance:none !important;
+    -webkit-appearance: none !important; 
+    appearance: none !important;
+    padding-right: 2rem !important;
+    
+}
+
+.wrap-left-filter select:focus{
+    border-color: #000;
+    outline:none;
+}
 
 .right-filter {
     width: 30px;
@@ -126,6 +141,8 @@
     background: transparent;
     border: 1px solid #d2d2d7;
 	height: 40px;
+    color: #000;
+    font-weight: bold;
 }
 
 .modal-top {

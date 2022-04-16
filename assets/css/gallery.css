@@ -6,7 +6,6 @@
     padding: 0 4px;
 }
 
-
 /* Create four equal columns that sits next to each other */
 .column {
     flex: 25%;
@@ -182,15 +181,20 @@ sup {
 }
 
 
-/* @media (max-width: 767px) {
+/* ==========================================================================
+   Desktop
+   ========================================================================== */
     .row {
-        padding: 0;
+        display: flex;
     }
-    .column {
-        flex: 100%;
-        max-width: 100%;
+
+    .row-tablet {
+        display: none;
     }
-} */
+
+    .row-mobile {
+        display: none;
+    }
 
 /* ==========================================================================
    Responsive CSS Landscape Tablet
