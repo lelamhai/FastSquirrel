@@ -12,6 +12,7 @@
     width: 100%;
     background-color: #fff;
     z-index: 3;
+    border-bottom: 1px solid #d2d2d7;
 }
 
 .modal-close {
@@ -99,9 +100,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 15px 10px;
 }
 
 .wrap-left-filter {
