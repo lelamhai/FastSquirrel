@@ -6,10 +6,12 @@
     height: 100%;
 }
 
-.modal-header {
+.header-modal {
     height: 40px;
-    padding: 0 20px;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    z-index: 3;
 }
 
 .modal-close {
@@ -84,18 +86,12 @@
     height: auto;
 }
 
-.modal-body {
-    height: 100%;
-    overflow: auto;
-    -ms-overflow-style: none; 
-    scrollbar-width: none; 
-    scroll-behavior: smooth;
-    padding-top: 15px;
-
+.body-modal {
+    margin-top: 40px;
 }
 
-.modal-body::-webkit-scrollbar {
-    display: none;
+.modal-body {
+    background-color: #fff;
 }
 
 /* filter */

@@ -1,25 +1,19 @@
 // ========== load screen ========== \\
-function loadPage() {
-    calculateModal();
-}
-
-// alert($( window ).width());
-
-// function onResize () {
-//     location.reload();
+// function loadPage() {
+//     calculateModal();
 // }
 
-window.addEventListener("orientationchange", function() {
-    location.reload();
-});
+// window.addEventListener("orientationchange", function() {
+//     location.reload();
+// });
 
-function calculateModal () {
-    $(document).ready(function(){
-        var head = parseFloat($(".modal-header").height());
-        var height = parseFloat($(".modal-body").height());
-        $(".modal-body").height(height - head);
-    });
-}
+// function calculateModal () {
+//     $(document).ready(function(){
+//         var head = parseFloat($(".modal-header").height());
+//         var height = parseFloat($(".modal-body").height());
+//         $(".modal-body").height(height - head);
+//     });
+// }
 
 
 
@@ -114,12 +108,12 @@ $(document).ready(function(){
 
     });
 
-    $("#button-top").click(function(){
-        $(".modal-body").animate(
-            {scrollTop: 0},
-            500
-        );
-    });
+    // $("#button-top").click(function(){
+    //     $(".modal-body").animate(
+    //         {scrollTop: 0},
+    //         500
+    //     );
+    // });
 
 
 });
