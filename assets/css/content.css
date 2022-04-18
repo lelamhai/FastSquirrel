@@ -12,6 +12,7 @@
     width: 100%;
     background-color: #fff;
     border-bottom: 1px solid #d2d2d7;
+    z-index: 1;
 }
 
 .modal-close {
