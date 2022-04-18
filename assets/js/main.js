@@ -17,12 +17,6 @@
 
 
 $(document).ready(function(){
-    $('body').scroll(function () {
-        alert($('body').scrollTop() );
-    });
-
-
-
     // ========== owl-carousel ========== \\
     $('.owl-carousel').owlCarousel({
         items: 6,
@@ -83,7 +77,6 @@ $(document).ready(function(){
 
     // ========== Popup ========== \\
     $(".item-carousel").click(function(){
-        alert(11);
         $('.modal').css("display", "block");
     })
 
