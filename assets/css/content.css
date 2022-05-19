@@ -90,7 +90,7 @@
     margin-top: 40px;
 }
 
-.modal-body {
+.body-modal {
     background-color: #fff;
 }
 
@@ -150,4 +150,148 @@
 
 .modal-top button {
     background: transparent;
+}
+
+
+/* ================= Info ================== */
+.info {
+    display: flex;
+    padding: 30px;
+}
+
+.wrap-left-info {
+  width: 40%;
+  padding-right: 15px;
+} 
+.wrap-right-info {
+  width: 60%;
+  padding-left: 15px;
+}
+
+.wrap-social-network {
+  padding-bottom: 20px;
+}
+
+.info-img {
+  padding-bottom: 15px;
+}
+
+.item-support {
+  padding-right: 20px;
+}
+
+.item-support img {
+  width: 50px;
+  height: auto;
+}
+
+.item-social-network img {
+  width: 30px;
+  height: auto;
+}
+
+.field-form {
+  padding-bottom: 15px;
+}
+
+.field-form input {
+  padding: 5px 15px;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  border: 1px solid #d2d2d7;
+}
+
+.field-form .error {
+  height: 16.5px;
+}
+
+.field-img {
+  display: flex;
+}
+
+.field-form .choose-img {
+  width: 30%;
+  color: #000;
+  cursor: pointer;
+}
+
+.form-submit {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.form-submit input {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: #000;
+}
+
+.wrap-description-info {
+    padding: 30px;
+}
+
+.slider-info {
+    z-index: 0;
+    position: relative;
+}
+
+.owl-nav {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.owl-next {
+    position: absolute;
+    right: 0;
+    background: linear-gradient(-90deg,rgba(0,0,0,.6),transparent) !important;
+}
+
+.owl-prev {
+    background: linear-gradient(90deg,rgba(0,0,0,.6),transparent) !important;
+}
+
+.owl-prev,
+.owl-next {
+    height: 100%;
+    width: 10%;
+}
+
+.owl-prev span,
+.owl-next span {
+    font-size: 90px;
+    color: #fff;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.reset-captcha {
+    display: flex;
+}
+
+#reset-captcha {
+    background: transparent;
+    padding-right: 30px;
+}
+
+#captcha {
+    background-image: url(../../assets/imgs/captcha-bg.png);
+    font-size: 18px;
+    letter-spacing: 35px;
+}
+
+.text-robot {
+    text-align: center;
+    font-size: 12px;
+}
+
+#reset-captcha img {
+    width: 70px;
+    height: auto;
 }

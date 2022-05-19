@@ -2,14 +2,18 @@
    Responsive CSS Landscape Tablet
    ========================================================================== */
    @media only screen and (min-width: 960px) and (max-width: 1240px) {
-   
+        #captcha {
+            letter-spacing: 30px;
+        }
     }
   
   /* ==========================================================================
      Responsive CSS Portrait Tablet
      ========================================================================== */
   @media only screen and (min-width: 768px) and (max-width: 959px) {
-    
+    #captcha {
+        letter-spacing: 10px;
+    }
   }
   
   /* ==========================================================================
@@ -58,4 +62,28 @@
         width: 80%;
     }
   }
+
+
+  @media only screen and (min-width: 100px) and (max-width: 767px) {
+    .info {
+        display: block;
+        padding: 15px;
+    }
+
+    .wrap-left-info {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .wrap-right-info {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    #captcha {
+        letter-spacing: 5px;
+    }
+   
+}
   

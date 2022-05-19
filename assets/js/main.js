@@ -18,10 +18,9 @@
 
 $(document).ready(function(){
     // ========== owl-carousel ========== \\
-    $('.owl-carousel').owlCarousel({
+    $('.slider-menu').owlCarousel({
         items: 6,
         dots: false,
-
         responsive:{
             0:{
                 items:4,
@@ -38,9 +37,15 @@ $(document).ready(function(){
                 items:6,
             },
         }
-        // mouseDrag: false,
-        // touchDrag: false
     });
+
+    $('.slider-info').owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+    })
+
+    
 
     // ========== favourite ========== \\
     $(".icon-plus").click(function(){
@@ -94,8 +99,23 @@ $(document).ready(function(){
         } 
     })
 
+    $(".choose-img").click(function(e){
+        e.preventDefault();
+        $('#myfile').trigger('click');
 
-    
+        $('input[type=file]').change(function () {
+            $('.file-name').val(this.files[0]['name']);
+      })
+    });
+
+
+    // ========== captcha ========== \\
+    $("#captcha").val(createCaptcha());
+    $("#reset-captcha").click(function(){
+        $("#captcha").val("");
+        $("#captcha").val(createCaptcha());
+    });
+  
     // ========== Top =========== \\
     // $(window).scroll(function (){
     //     var scroll = $(".modal-body").scrollTop();
@@ -116,6 +136,16 @@ $(document).ready(function(){
 
 });
 
+function createCaptcha()
+{
+    var txt= "0123456789abcdefghijklmnopqrstuvwxyABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var captcha="";
+    for(var i=1;i<=6; i++)
+    {
+        captcha = captcha + txt.charAt(Math.floor(Math.random()*63));
+    }
+    return captcha;
+}
 
 
 

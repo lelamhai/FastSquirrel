@@ -6,12 +6,12 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="./assets/OwlCarousel/assets/owl.carousel.min.css">
       <link rel="stylesheet" href="./assets/JqueryFlipster/jquery.flipster.min.css">
-      <link rel="stylesheet" href="./style.css?v=45">
-      <link rel="stylesheet" href="./assets/css/content.css?v=22">
+      <link rel="stylesheet" href="./style.css?v=49">
+      <link rel="stylesheet" href="./assets/css/content.css?v=29">
       <link rel="stylesheet" href="./assets/css/gallery.css?v=35">
       <link rel="stylesheet" href="./assets/css/style.flipster.css">
       <link rel="stylesheet" href="./assets/css/animation.css">
-      <link rel="stylesheet" href="./assets/css/reponsive.css?v=3">
+      <link rel="stylesheet" href="./assets/css/reponsive.css?v=6">
       <link rel="stylesheet" href="./assets/css/fonts.css">
    </head>
    <body>
@@ -45,21 +45,39 @@
                <div class="body-modal modal">
                   <div class="modal-body info">
                      <div class="wrap-left-info">
-                        <div class="info-img">
-                           <img src="./assets/imgs/gallery/2f.jpg" alt="">
+                        <div class="info-img ">
+                           <div class="owl-carousel slider-info">
+                              <div class="item-owl-info">
+                                 <img src="./assets/imgs/gallery/2f.jpg" alt="">
+                              </div>
+                              <div class="item-owl-info">
+                                 <img src="./assets/imgs/gallery/2f.jpg" alt="">
+                              </div>
+                              <div class="item-owl-info">
+                                 <img src="./assets/imgs/gallery/2f.jpg" alt="">
+                              </div>
+                              <div class="item-owl-info">
+                                 <img src="./assets/imgs/gallery/2f.jpg" alt="">
+                              </div>
+                              <div class="item-owl-info">
+                                 <img src="./assets/imgs/gallery/2f.jpg" alt="">
+                              </div>
+                              <div class="item-owl-info">
+                                 <img src="./assets/imgs/gallery/2f.jpg" alt="">
+                              </div>
+                              <div class="item-owl-info">
+                                 <img src="./assets/imgs/gallery/2f.jpg" alt="">
+                              </div>
+                           </div>
                         </div>
-
                         <div class="wrap-support-info">
                            <span class="item-support"><img src="./assets/imgs/icons/icon_support.png" alt=""></span>
-                           <!-- <span class="item-support"><img src="./assets/imgs/icons/icon_camera.png" alt=""></span> -->
-                           <span class="item-support"><img src="./assets/imgs/icons/icon_ar.png" alt=""></span>
+                           <span class="item-support"><img src="./assets/imgs/icons/icon_camera.png" alt=""></span>
+                           <span class="item-support"><img src="./assets/imgs/icons/icon_video.png" alt=""></span>
                         </div>
                      </div>
-                     <div class="wrap-right-info">
-                        <div class="wrap-social-network">
-                           <span class="item-social-network"><img src="./assets/imgs/icons/icon_facebook.png" alt=""></span>
-                        </div>
 
+                     <div class="wrap-right-info">
                         <div class="wrap-form">
                            <div class="form-fullname field-form">
                               <input type="text" placeholder="Họ và Tên">
@@ -71,20 +89,34 @@
                            </div>
                            <div class="form-mail field-form">
                               <input type="text" placeholder="Địa chỉ mail">
-
                               <div class="error"></div>
                            </div>
                            <div class="form-file field-form field-img">
+                              <input type="file" id="myfile" name="myfile" accept="image/*" hidden>
                               <input class="choose-img" type="button" value="Chọn hình">
-                              <input type="text" placeholder="File hình" read-only>
+                              <input class="file-name" type="text" placeholder="File hình" readonly>
                               <div class="error"></div>
+                           </div>
+
+                          
+                           <div class="form-file field-form reset-captcha">
+                              <button id="reset-captcha"><img src="./assets/imgs/icons/icon_undo.png" alt=""></button>
+                              <input type="text" id="captcha" value="" readonly>
+                              <input type="text" class="captcha-value" placeholder="Mời bạn nhập lại chuỗi ký tự">
+                           </div>
+
+                           <div class="form-file field-form text-robot">
+                              Bạn có phải là robot không? Mời bạn nhập chuỗi ký tự bên trên.
                            </div>
                            <div class="form-submit">
                               <input type="button" value="Gửi">
                            </div>
                         </div>
                      </div>
+                  </div>
 
+                  <div class="wrap-description-info">
+                     description
                   </div>
                </div>
 
@@ -95,7 +127,7 @@
             
             <div id="footer">
                <div class="wrap-footer">
-                  <div class="owl-carousel owl-theme">
+                  <div class="owl-carousel slider-menu">
                      <div class="item-carousel"> 
                         <img src="./assets/imgs/icons/icon_setting.png?>" alt=""> 
                      </div>
@@ -131,7 +163,7 @@
       <script src="./assets/js/jquery.js" ></script>
       <script src="./assets/OwlCarousel/owl.carousel.min.js" ></script>
       <script src="./assets/JqueryFlipster/jquery.flipster.min.js" ></script>
-      <script src="./assets/js/main.js?v=25" ></script>
+      <script src="./assets/js/main.js?v=45" ></script>
    </body>
 </html>
 
