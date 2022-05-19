@@ -110,10 +110,103 @@ $(document).ready(function(){
 
 
     // ========== captcha ========== \\
-    $("#captcha").val(createCaptcha());
+    var lastCaptcha = "";
+
+    // load first
+    lastCaptcha = createCaptcha();
+    $("#captcha").val(lastCaptcha);
+
+    // button rest captcha
     $("#reset-captcha").click(function(){
         $("#captcha").val("");
-        $("#captcha").val(createCaptcha());
+        lastCaptcha = createCaptcha();
+        $("#captcha").val(lastCaptcha);
+    });
+
+   
+    // ========== form info ========== \\
+    var isFulleName = false;
+    var isPhone = false;
+    var isMail = false;
+    var isFileName = false;
+    var isCaptcha = false;
+
+    $(".submit-info").click(function(){
+        var fulleName = $('.full-name').val();
+        var phone = $('.phone').val();
+        var mail = $('.mail').val();
+        var fileName = $('.file-name').val();
+        var captcha = $('.captcha-value').val();
+
+        clearError();
+
+        if(fulleName != null && fulleName != '')
+        {
+            isFulleName = true;
+        } else {
+            $('.form-fullname .error').text('Họ và tên không được bỏ trống');
+            isFulleName = false;
+       }
+
+        if(phone != null && phone != '')
+        {
+            if(isVietnamesePhoneNumber(phone)) {
+                isPhone = true;
+            } else {
+                $('.form-phone .error').text('Không đúng định dạng số điện thoại');
+                isPhone = false;
+            }
+        } else {
+            $('.form-phone .error').text('Số điện thoại không được bỏ trống');
+            isPhone = false;
+        }
+
+        if(mail != null && mail != '')
+        {
+            if(validateEmail(mail)) { 
+                isMail = true;
+            } else {
+                $('.form-mail .error').text('Không đúng định dạng mail');
+                isMail = false;
+            }
+        } else {
+            $('.form-mail .error').text('Địa chỉ mail không được bỏ trống');
+            isMail = false;
+        }
+
+        if(fileName != null && fileName != '')
+        {
+            isFileName = true;
+        } else {
+            $('.form-file .error').text('Chưa chọn hình');
+            isFileName = false;
+        }
+
+        if(captcha != null && captcha != '')
+        {
+            if(captcha === lastCaptcha)
+            {
+                isCaptcha = true;
+            } else {
+                $('.form-captcha .error').text('Chuỗi bảo mật không đúng với hệ thống');
+                $("#captcha").val("");
+                lastCaptcha = createCaptcha();
+                $("#captcha").val(lastCaptcha);
+                isCaptcha = false;
+            }
+        } else {
+            $('.form-captcha .error').text('Chuỗi bảo mật không được bỏ trống');
+            $("#captcha").val("");
+            lastCaptcha = createCaptcha();
+            $("#captcha").val(lastCaptcha);
+            isCaptcha = false;
+        }
+
+        // Finish
+        if(isFulleName && isPhone && isMail && isFileName && isCaptcha)
+        {
+            alert("Finish");
+        }
     });
   
     // ========== Top =========== \\
@@ -135,6 +228,24 @@ $(document).ready(function(){
 
 
 });
+
+function clearError()
+{
+    $('.form-fullname .error').text('');
+    $('.form-phone .error').text('');
+    $('.form-mail .error').text('');
+    $('.form-file .error').text('');
+    $('.form-captcha .error').text('');
+}
+
+function validateEmail($email) {
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    return emailReg.test( $email );
+}
+
+function isVietnamesePhoneNumber($number) {
+    return /(03|05|07|08|09|01[2|6|8|9])+([0-9]{8})\b/.test($number);
+}
 
 function createCaptcha()
 {

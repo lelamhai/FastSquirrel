@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="./assets/OwlCarousel/assets/owl.carousel.min.css">
       <link rel="stylesheet" href="./assets/JqueryFlipster/jquery.flipster.min.css">
       <link rel="stylesheet" href="./style.css?v=50">
-      <link rel="stylesheet" href="./assets/css/content.css?v=35">
+      <link rel="stylesheet" href="./assets/css/content.css?v=37">
       <link rel="stylesheet" href="./assets/css/gallery.css?v=35">
       <link rel="stylesheet" href="./assets/css/style.flipster.css">
       <link rel="stylesheet" href="./assets/css/animation.css">
@@ -80,33 +80,37 @@
                      <div class="wrap-right-info">
                         <div class="wrap-form">
                            <div class="form-fullname field-form">
-                              <input type="text" placeholder="Họ và Tên">
+                              <input type="text" class="full-name" placeholder="Họ và tên">
                               <div class="error"></div>
                            </div>
                            <div class="form-phone field-form">
-                              <input type="text" placeholder="Số điện thoại">
+                              <input type="text" class="phone" placeholder="Số điện thoại">
                               <div class="error"></div>
                            </div>
                            <div class="form-mail field-form">
-                              <input type="text" placeholder="Địa chỉ mail">
+                              <input type="text" class="mail" placeholder="Địa chỉ mail">
                               <div class="error"></div>
                            </div>
                            <div class="form-file field-form field-img">
-                              <input type="file" id="myfile" name="myfile" accept="image/*" hidden>
-                              <input class="choose-img" type="button" value="Chọn hình">
-                              <input class="file-name" type="text" placeholder="File hình" readonly>
+                              <div class="wrap-file">
+                                 <input type="file" id="myfile" name="myfile" accept="image/*" hidden>
+                                 <input class="choose-img" type="button" value="Chọn hình">
+                                 <input class="file-name" class="file-name" type="text" placeholder="File hình" readonly>
+                              </div>
                               <div class="error"></div>
                            </div>
 
-                          
-                           <div class="form-file field-form reset-captcha">
-                              <button id="reset-captcha"><img src="./assets/imgs/icons/icon_undo.png" alt=""></button>
-                              <input type="text" id="captcha" value="" readonly>
-                              <input type="text" class="captcha-value" placeholder="Nhập lại chuỗi ký tự">
+                           <div class="form-captcha field-form reset-captcha">
+                              <div class="wrap-captch">
+                                 <input type="text" class="captcha-value" placeholder="Chuỗi bảo mật">
+                                 <input type="text" id="captcha" readonly>
+                                 <button id="reset-captcha"><img src="./assets/imgs/icons/icon_undo.png" alt=""></button>
+                              </div>
+                              <div class="error"></div>
                            </div>
 
                            <div class="form-file field-form text-robot">
-                              Bạn có phải là robot không? Mời bạn nhập chuỗi ký tự bên trên.
+                              Bạn có phải là robot không? Bạn hãy nhập chuỗi bảo mật ở trên.
                            </div>
                            <div class="form-submit">
                               <input type="button" class="submit-info" value="Gửi">
@@ -163,7 +167,7 @@
       <script src="./assets/js/jquery.js" ></script>
       <script src="./assets/OwlCarousel/owl.carousel.min.js" ></script>
       <script src="./assets/JqueryFlipster/jquery.flipster.min.js" ></script>
-      <script src="./assets/js/main.js?v=45" ></script>
+      <script src="./assets/js/main.js?v=58" ></script>
    </body>
 </html>
 
