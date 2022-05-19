@@ -50,6 +50,14 @@ button {
   outline: none;
 }
 
+input {
+  border-radius: 0;
+}
+
+input[type="button"] {
+  -webkit-appearance: none;
+}
+
 
 textarea {
   resize: vertical;
