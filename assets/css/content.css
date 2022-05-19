@@ -214,6 +214,7 @@
   width: 30%;
   color: #000;
   cursor: pointer;
+  border-radius: 0;
 }
 
 .form-submit {
@@ -221,11 +222,13 @@
   padding-top: 50px;
 }
 
-.form-submit input {
-  width: 200px;
+.form-submit .submit-info {
+  width: 150px;
   height: 50px;
-  font-size: 20px;
+  font-size: 16px;
   color: #000;
+  border-radius: 0;
+  border: 1px solid #d2d2d7;
 }
 
 .wrap-description-info {
@@ -283,7 +286,8 @@
 #captcha {
     background-image: url(../../assets/imgs/captcha-bg.png);
     font-size: 18px;
-    letter-spacing: 35px;
+    text-align: center;
+    letter-spacing: 10px;
 }
 
 .text-robot {
