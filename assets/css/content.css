@@ -182,13 +182,12 @@
     position: absolute;
     bottom: 0;
     padding-left: 10px;
-    /* z-index: -1; */
 }
 
 .person-support {
     padding-bottom: 5px;
     width: 35px;
-    /* opacity: 0; */
+    cursor: pointer;
 }
 
 .person-support3 {
