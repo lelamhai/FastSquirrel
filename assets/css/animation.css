@@ -21,7 +21,7 @@
 .move .person-support {
   transform: translateY(0);
   opacity: 1;
-  animation: up 1s forwards !important;
+  animation: up 1s ease-in-out 1 forwards !important;
 }
  
 @keyframes up {
