@@ -174,15 +174,52 @@
 
 .info-img {
   padding-bottom: 15px;
+  position: relative;
+  z-index: 0;
+}
+
+.wrap-person-support {
+    position: absolute;
+    bottom: 0;
+    padding-left: 10px;
+    /* z-index: -1; */
+}
+
+.person-support {
+    padding-bottom: 5px;
+    width: 35px;
+    /* opacity: 0; */
+}
+
+.person-support3 {
+    transform: translateY(120px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.person-support2 {
+    transform: translateY(100px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.person-support1 {
+    transform: translateY(50px);
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.wrap-support-info {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
 }
 
 .item-support {
   padding-right: 20px;
-}
-
-.item-support img {
-  width: 50px;
-  height: auto;
+  width: 70px;
+  cursor: pointer;
 }
 
 .item-social-network img {

@@ -5,3 +5,41 @@
 .flip .front-card {
   z-index: -1;
 }
+
+/* .down:hover .person-support {
+  animation: up 1s ease-in-out 1 forwards !important;
+} */
+
+/* .down .person-support {
+  animation: down 1s ease-in-out 1 forwards;
+} */
+
+.move {
+    z-index: 0;
+}
+
+.move .person-support {
+  transform: translateY(0);
+  opacity: 1;
+  animation: up 1s forwards !important;
+}
+ 
+@keyframes up {
+  0%  {
+    opacity: 0;
+  }
+ 
+  100% {
+    opacity: 1;
+  }
+}
+ 
+@keyframes down {
+  0%  {
+    opacity: 1;
+  }
+ 
+  100% {
+    opacity: 0;
+  }
+}

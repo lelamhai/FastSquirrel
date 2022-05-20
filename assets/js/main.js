@@ -208,6 +208,16 @@ $(document).ready(function(){
             alert("Finish");
         }
     });
+
+    // ========== support========== \\
+    $(".current-support").click(function(){
+        if($('.down').hasClass('move'))
+        {
+            $('.down').removeClass('move');
+        } else {
+            $('.down').addClass('move');
+        }
+    });
   
     // ========== Top =========== \\
     // $(window).scroll(function (){
