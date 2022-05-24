@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="./assets/OwlCarousel/assets/owl.carousel.min.css">
       <link rel="stylesheet" href="./assets/JqueryFlipster/jquery.flipster.min.css">
       <link rel="stylesheet" href="./style.css?v=50">
-      <link rel="stylesheet" href="./assets/css/content.css?v=50">
+      <link rel="stylesheet" href="./assets/css/content.css?v=54">
       <link rel="stylesheet" href="./assets/css/gallery.css?v=35">
       <link rel="stylesheet" href="./assets/css/style.flipster.css">
       <link rel="stylesheet" href="./assets/css/animation.css?v=13">
@@ -81,18 +81,164 @@
                            <div class="item-support"><img src="./assets/imgs/icons/icon_camera.png" alt=""></div>
                            <div class="item-support"><img src="./assets/imgs/icons/icon_video.png" alt=""></div>
                         </div>
-
-                        
-
                      </div>
+
+                     <style>
+                        .wrap-field-input {
+                           margin-bottom: 20px;
+                        }
+
+                        .form {
+                           position: relative;
+                           width: 100%;
+                           height: 50px;
+                           font-size: 16px;
+                        }
+                        .form__input {
+                           position: absolute;
+                           top: 0;
+                           left: 0;
+                           width: 100%;
+                           height: 100%;
+                           border: 1px solid #d2d2d7;
+                           font-family: inherit;
+                           font-size: inherit;
+                           color: #000;
+                           outline: none;
+                           padding:  5px 15px;
+                           background: none;
+                           /* Change border when input focus*/
+                        }
+
+                        .captcha-value:hover, 
+                        .form__input:hover {
+                           border-color: #adffff;
+                        }
+                        .captcha-value:hover,
+                        .form__input:focus {
+                           border-color: #18ffff;
+                        }
+
+                        .form__label {
+                           position: absolute;
+                           left: 15px;
+                           top: 50%;
+                           transform: translateY(-50%);
+                           color: rgb(0, 0, 0);
+                           cursor: text;
+                           transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+                           background-color: #ffffff;
+                        }
+
+                        .form__input:focus ~ .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+                           top: -1px;
+                           font-size: 0.8rem;
+                           left: 15px;
+                        }
+
+                        .choose-img {
+                           width: 30%;
+                           height: 100%;
+                           color: #000;
+                           cursor: pointer;
+                           border-radius: 0;
+                           background-color: #f5f5f7;
+                           padding: 5px 15px;
+                           border: 1px solid #d2d2d7;
+                        }
+
+                        .file-name {
+                           width: 100%;
+                           height: 100%;
+                           color: #000;
+                           cursor: pointer;
+                           border-radius: 0;
+                           padding: 5px 15px;
+                           border: 1px solid #d2d2d7;
+                        }
+
+                        .wrap-file .form,
+                        .wrap-captch .form {
+                           display: flex;
+                        }
+
+                        #captcha,
+                        .captcha-value {
+                           width: 100%;
+                           height: 100%;
+                           color: #000;
+                           cursor: pointer;
+                           border-radius: 0;
+                           padding: 5px 15px;
+                           border: 1px solid #d2d2d7;
+                        }
+                     </style>
 
                      <div class="wrap-right-info">
                         <div class="wrap-form">
-                           <div class="form-fullname field-form">
-                              <input type="text" class="full-name" placeholder="Họ và tên">
-                              <div class="error"></div>
+                           
+                           <div class="wrap-field-input">
+                              <div class="form">
+                                 <input type="text" id="full-name" class="form__input full-name" placeholder=" ">
+                                 <label for="full-name" class="form__label">Họ và tên</label>
+                              </div>
+                              <div class="error">aaaaa</div>
                            </div>
-                           <div class="form-phone field-form">
+
+                           <div class="wrap-field-input">
+                              <div class="form">
+                                 <input type="text" id="phone" class="form__input phone" placeholder=" ">
+                                 <label for="phone" class="form__label">Số điện thoại</label>
+                              </div>
+                              <div class="error">aaaa</div>
+                           </div>
+                           
+                           <div class="wrap-field-input">
+                              <div class="form">
+                                 <input type="text" id="mail" class="form__input mail" placeholder=" ">
+                                 <label for="mail" class="form__label">Email</label>
+                              </div>
+                              <div class="error">aaaa</div>
+                           </div>
+
+                           <div class="wrap-field-input wrap-file">
+                              <div class="form">
+                                 <input type="file" id="myfile" name="myfile" accept="image/*" hidden>
+                                 <input class="choose-img" type="button" value="Chọn hình">
+                                 <input class="file-name" type="text" placeholder="File hình" readonly>
+                              </div>
+                              <div class="error">aaaa</div>
+                           </div>
+
+                           <div class="wrap-field-input wrap-captch">
+                              <div class="form">
+                                 <input type="text" class="captcha-value" placeholder="Chuỗi bảo mật">
+                                 <input type="text" id="captcha" readonly>
+                                 <button id="reset-captcha"><img src="./assets/imgs/icons/icon_undo.png" alt=""></button>
+                              </div>
+                              <div class="error">aaaa</div>
+                           </div>
+
+                           <!-- <div class="wrap-field-input">
+                              <div class="wrap-captch">
+                                 <input type="text" class="captcha-value" placeholder="Chuỗi bảo mật">
+                                 <input type="text" id="captcha" readonly>
+                                 <button id="reset-captcha"><img src="./assets/imgs/icons/icon_undo.png" alt=""></button>
+                              </div>
+                              <div class="error">aaaa</div>
+                           </div> -->
+
+                           <div class="form-file field-form text-robot">
+                              Bạn có phải là robot không? Bạn hãy nhập chuỗi bảo mật ở trên.
+                           </div>
+
+                           <div class="form-submit">
+                              <input type="button" class="submit-info" value="Gửi">
+                           </div>
+
+                          
+
+                           <!--<div class="form-phone field-form">
                               <input type="text" class="phone" placeholder="Số điện thoại">
                               <div class="error"></div>
                            </div>
@@ -123,7 +269,7 @@
                            </div>
                            <div class="form-submit">
                               <input type="button" class="submit-info" value="Gửi">
-                           </div>
+                           </div> -->
                         </div>
                      </div>
                   </div>

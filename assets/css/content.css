@@ -181,7 +181,7 @@
 .wrap-person-support {
     position: absolute;
     bottom: 0;
-    padding-left: 10px;
+    padding-left: 18px;
 }
 
 .person-support {
@@ -216,7 +216,7 @@
 }
 
 .item-support {
-  padding-right: 20px;
+  margin-right: 20px;
   width: 70px;
   cursor: pointer;
 }
@@ -245,24 +245,11 @@
   padding-top: 5px;
 }
 
-.wrap-file {
+/* .wrap-file {
   display: flex;
-}
-
-/* .form-address textarea {
-    padding: 5px 15px;
-    width: 100%;
-    font-size: 16px;
-    border: 1px solid #d2d2d7;
 } */
 
-.field-form .choose-img {
-  width: 30%;
-  color: #000;
-  cursor: pointer;
-  border-radius: 0;
-  background-color: #f5f5f7;
-}
+
 
 .form-submit {
   text-align: center;
@@ -323,9 +310,9 @@
     display: none;
 }
 
-.wrap-captch {
+/* .wrap-captch {
     display: flex;
-}
+} */
 
 #reset-captcha {
     background: transparent;
