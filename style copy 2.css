@@ -23,7 +23,6 @@ img {
   margin: 0;
   vertical-align: top;
   max-width: 100%;
-  height: auto;
 }
 
 p {
@@ -49,8 +48,6 @@ button {
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: none;
-  background: transparent;
-  border: 0;
 }
 
 input {
@@ -100,7 +97,12 @@ h6 {
     padding: 0;
     font-size: 14px;
     font-family: Roboto-Regular;
+    /* color: #fff; */
 }
 
-
+.background-image {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
