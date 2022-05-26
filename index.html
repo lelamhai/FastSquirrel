@@ -4,214 +4,24 @@
       <title>Fast Squirrel</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="./style.css?v=3">
-      <link rel="stylesheet" href="./assets/css/reponsive.css?v=">
+      <link rel="stylesheet" href="./style.css?v=6">
+      <link rel="stylesheet" href="./assets/css/reponsive.css?v=2">
       <link rel="stylesheet" href="./assets/css/fonts.css">
       <style>
-         .background-image {
-            min-height: 100vh;
-            overflow-x: hidden;
-         }
+    
+        
 
-         #main {
-            padding: 0 30px;
-         }
-
-         /* header */
-         .wrap-header {
-            display: flex;
-            color: #fff;
-            background-color: rgba(60,60,60,.4);
-            align-items: center;
-            justify-content: space-between;
-            align-content: center;
-            padding: 10px 30px;
-         }
-
-         .logo a {
-            font-size: 36px;
-            font-family: Roboto-Black;
-            letter-spacing: 5px;
-            background: linear-gradient(45deg,#18ffff,#c471ed,#f64f59);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-         }
-
-         .menu {
-            display: flex;
-         }
-
-         .main-menu {
-            display: flex;
-            align-items: center;
-            height: 100%;
-         }
-
-         .main-menu li {
-            padding-left: 40px;
-         }
-
-         .main-menu li a {
-            color: rgb(191, 219, 230);
-            font-size: 18px;
-         }
-
-         .search {
-            height: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-right: 5px;
-            padding-left: 15px;
-            border: 1px solid #fff;
-            background-color: rgba(60,60,60,.4);
-         }
-
-         .input-search {
-            color: #fff;
-         }
-
-         .search img {
-            width: 16px;
-            height: auto;
-         }
-
-         /* filter */
-         .filter {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            align-content: center;
-            padding: 45px 0 30px 0;
-         }
-
-         .wrap-filter {
-            display: flex;
-         }
-
-         .select-filter {
-            margin-right: 15px;
-            padding: 5px 10px;
-            background: transparent;
-            height: 40px;
-            color: #fff;
-            font-weight: 500;
-            background: url("./assets/imgs/icons/icon_select.png") no-repeat;
-            background-size: 10px 10px;
-            background-position: calc(100% - 0.75rem) center !important;
-            -moz-appearance:none !important;
-            -webkit-appearance: none !important; 
-            appearance: none !important;
-            padding-right: 2rem !important;
-            background-color: rgba(60,60,60,.4);
-         }
-         /* gallery */
-         .gallery{
-            column-count: 4;
-            column-gap: 10px;
-            padding-bottom: 45px;
-         }
-
-         .box {
-            position: relative;
-            cursor: pointer;
-            overflow: hidden;
-            margin-bottom: 10px;
-            border-radius: 10px;
-         }
-         
-         .frame-box {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            border: 1px solid #18ffff;
-            border-radius: 10px;
-         }
-
-         /* footer */
-         .footer {
-            padding: 0 30px;
-            color: #fff;
-         }
-
-         .footer-hr {
-            width: 100%;
-            height: 1px;
-            background: linear-gradient(45deg,#18ffff,#c471ed,#f64f59);
-            margin-bottom: 35px;
-         }
-
-         .wrap-footer {
-            display: flex;
-            padding-bottom: 45px;
-         }
-
-         .left-footer {
-            width: 30%;
-         }
-
-         .social-network {
-            display: flex;
-            padding: 10px 0 20px 0;
-         }
-
-         .info-footer img {
-            width: 200px;
-            height: auto;
-         }
-
-         .item-social-network {
-            padding-right: 15px;
-         }
-
-         .item-social-network img {
-            width: 24px;
-         }
-
-         .center-footer {
-            width: 40%;
-            padding: 0 15px;
-         }
-
-         .center-footer p {
-            margin-bottom: 15px;
-         }
-
-         .right-footer {
-            width: 30%;
-         }
-
-         .footer-menu li {
-            margin-bottom: 10px;
-         }
-
-         .footer-menu a {
-            color: #fff;
-            font-size: 16px;
-         }
-
-         .copyright {
-            text-align: center;
-            margin-bottom: 30px;
-         }
-
-         .hr-copyright {
-            /* width: 100%;
-            height: 0.5px;
-            background-color: rgb(138, 138, 138); */
-            margin-bottom: 30px;
-         }
       </style>
    </head>
    <body>
-   
       <main>
          <div class="background-image" style="background-image: url('./assets/imgs/background/bg1.jpg');">
             <div class="wrap-main">
-
                <div id="header">
                   <div class="wrap-header">
+                     <div class="close-menu mobile">
+                        <button><img src="./assets/imgs/icons/icon_close.png" alt=""></button>
+                     </div>
                      <div class="logo">
                         <a href="">Fast Squirrel</a>
                      </div>
@@ -227,9 +37,13 @@
                               <li><a href="">Liên Hệ</a></li>
                            </ul>
                         </div>
-                       
                      </div>
                   </div>
+
+               </div>
+
+               <div class="menu-mobile mobile">
+                  <button><img src="./assets/imgs/icons/icon_menu.png" alt=""></button>
                </div>
 
                <div id="main">
@@ -421,7 +235,7 @@
                         </div>
 
                         <div class="right-footer">
-                           <p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.3427369310944!2d105.49115137764456!3d10.504099843785134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a6bf89c446107%3A0x53611c7a1e7f1e7c!2sChau%20Van%20Liem%20High%20School!5e0!3m2!1sen!2s!4v1653555550214!5m2!1sen!2s" width="100%" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                           <p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2656.3427369310944!2d105.49115137764456!3d10.504099843785134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a6bf89c446107%3A0x53611c7a1e7f1e7c!2sChau%20Van%20Liem%20High%20School!5e0!3m2!1sen!2s!4v1653555550214!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
                         </div>
                      </div>
                      <div class="copyright" style="text-align:center;">

@@ -1,0 +1,105 @@
+/* ==========================================================================
+   Responsive CSS Landscape Tablet
+   ========================================================================== */
+   @media only screen and (min-width: 960px) and (max-width: 1240px) {
+        /* #captcha {
+            letter-spacing: 30px;
+        } */
+    }
+  
+  /* ==========================================================================
+     Responsive CSS Portrait Tablet
+     ========================================================================== */
+  @media only screen and (min-width: 768px) and (max-width: 959px) {
+    /* #captcha {
+        letter-spacing: 10px;
+    } */
+  }
+  
+  /* ==========================================================================
+     Responsive CSS Landscape Mobile
+     ========================================================================== */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+  }
+  
+  /* ==========================================================================
+     Responsive CSS Portrait Mobile
+     ========================================================================== */
+  @media only screen and (min-width: 100px) and (max-width: 560px) {
+    .wrap-filter{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .left-filter {
+        width: 100%;
+    }
+
+    .wrap-left-filter {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .category-filter,
+    .author-filter,
+    .system-filter {
+        width: 100%;
+    }
+
+    .filter {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .header-search-input {
+        width: 80px;
+    }
+
+    .wrap-footer {
+        width: 80%;
+    }
+
+    .form-submit {
+        padding-top: 20px;
+    }
+
+    #reset-captcha {
+        padding-right: 10px;
+    }
+
+    .field-form input {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .text-robot {
+        font-size: 10px;
+    }
+  }
+
+
+  @media only screen and (min-width: 100px) and (max-width: 767px) {
+    .info {
+        display: block;
+        padding: 15px;
+    }
+
+    .wrap-left-info {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+
+    .wrap-right-info {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    /* #captcha {
+        letter-spacing: 5px;
+    } */
+   
+}
+  

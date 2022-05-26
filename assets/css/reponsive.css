@@ -1,105 +1,173 @@
 /* ==========================================================================
-   Responsive CSS Landscape Tablet
-   ========================================================================== */
-   @media only screen and (min-width: 960px) and (max-width: 1240px) {
-        /* #captcha {
-            letter-spacing: 30px;
-        } */
+Responsive CSS Landscape Tablet
+========================================================================== */
+@media only screen and (min-width: 960px) and (max-width: 1240px) {
+    .main-menu li {
+      padding-left: 30px;
     }
   
-  /* ==========================================================================
-     Responsive CSS Portrait Tablet
-     ========================================================================== */
-  @media only screen and (min-width: 768px) and (max-width: 959px) {
-    /* #captcha {
-        letter-spacing: 10px;
-    } */
-  }
+    .gallery {
+      column-count: 3;
+    }
+}
+  
+/* ==========================================================================
+Responsive CSS Portrait Tablet
+========================================================================== */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .gallery {
+      column-count: 2;
+    }
+  
+    .logo a {
+      font-size: 30px;
+    }
+  
+    .main-menu li {
+      padding-left: 15px;
+    }
+  
+    .main-menu li a {
+      font-size: 16px;
+    }
+  
+    .wrap-footer {
+      padding-bottom: 0;
+    }
+}
   
   /* ==========================================================================
-     Responsive CSS Landscape Mobile
-     ========================================================================== */
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
+  Responsive CSS Landscape Mobile
+  ========================================================================== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
     
-  }
+}
   
-  /* ==========================================================================
-     Responsive CSS Portrait Mobile
-     ========================================================================== */
-  @media only screen and (min-width: 100px) and (max-width: 560px) {
-    .wrap-filter{
-        flex-direction: column;
-        width: 100%;
-    }
+/* ==========================================================================
+Responsive CSS Portrait Mobile
+========================================================================== */
+@media only screen and (min-width: 100px) and (max-width: 560px) {
 
-    .left-filter {
-        width: 100%;
-    }
-
-    .wrap-left-filter {
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    .category-filter,
-    .author-filter,
-    .system-filter {
-        width: 100%;
+}
+  
+/* ==========================================================================
+    Responsive CSS Mobile
+========================================================================== */
+@media only screen and (min-width: 100px) and (max-width: 767px) {
+    .mobile {
+        display: block;
     }
 
     .filter {
-        width: 100%;
-        margin-bottom: 15px;
-        margin-right: 0;
+      flex-direction: column;
+      padding: 0 0 30px 0;
     }
-
-    .header-search-input {
-        width: 80px;
+  
+    #main {
+      padding: 0 15px;
     }
-
+  
+    .footer {
+      padding: 0 15px;
+    }
+  
+    .wrap-header {
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      padding: 15px 15px;
+      background-color: #15363ded;
+      transition: transform 500ms ease-in-out 25ms;
+      z-index: 1;
+    }
+  
+    .close-menu {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 15px;
+    }
+  
+    .close-menu img {
+      width: 20px;
+    }
+  
+    .wrap-header .logo {
+      margin-bottom: 30px;
+    }
+  
+    .menu {
+      width: 100%;
+    }
+  
+    .wrap-menu {
+      width: 100%;
+    }
+  
+    .main-menu {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .main-menu li {
+      width: 100%;
+      padding: 15px 0;
+    }
+  
+    .not-showmenu {
+      transform: translateX(-100%);
+    }
+  
+    .menu-mobile {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px;
+    }
+  
+    .menu-mobile img {
+      width: 32px;
+      height: auto;
+    }
+  
+    .wrap-filter {
+      width: 100%;
+      flex-direction: column;
+    }
+  
+    .select-filter {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .gallery {
+      column-count: 1;
+    }
+  
     .wrap-footer {
-        width: 80%;
+      flex-direction: column;
+      padding-bottom: 0;
     }
-
-    .form-submit {
-        padding-top: 20px;
+  
+    .left-footer {
+      width: 100%;
+      padding-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
-    #reset-captcha {
-        padding-right: 10px;
+  
+    .center-footer {
+      width: 100%;
+      padding: 0;
     }
-
-    .field-form input {
-        padding: 5px 10px;
-        font-size: 14px;
+  
+    .right-footer {
+      width: 100%;
+      height: 220px;
     }
-
-    .text-robot {
-        font-size: 10px;
-    }
-  }
-
-
-  @media only screen and (min-width: 100px) and (max-width: 767px) {
-    .info {
-        display: block;
-        padding: 15px;
-    }
-
-    .wrap-left-info {
-        width: 100%;
-        padding-right: 0;
-        padding-bottom: 30px;
-    }
-
-    .wrap-right-info {
-        width: 100%;
-        padding-left: 0;
-    }
-
-    /* #captcha {
-        letter-spacing: 5px;
-    } */
-   
 }
   
