@@ -252,9 +252,19 @@ h6 {
   width: 30%;
 }
 
+.wrap-left-footer {
+  display: inline-block;
+}
+
 .social-network {
   display: flex;
+  justify-content: center;
   padding: 10px 0 20px 0;
+}
+
+.info-footer {
+  display: flex;
+  justify-content: center;
 }
 
 .info-footer img {
@@ -263,7 +273,7 @@ h6 {
 }
 
 .item-social-network {
-  padding-right: 15px;
+  padding: 0 10px;
 }
 
 .item-social-network img {
