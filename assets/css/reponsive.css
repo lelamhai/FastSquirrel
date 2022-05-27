@@ -36,22 +36,38 @@ Responsive CSS Portrait Tablet
     }
 }
   
-  /* ==========================================================================
-  Responsive CSS Landscape Mobile
-  ========================================================================== */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-    
+/* ==========================================================================
+Responsive CSS Landscape Mobile
+========================================================================== */
+@media only screen and (min-width: 559px) and (max-width: 767px) {
+  .wrap-header .logo a {
+    font-size: 55px;
+  }
+
+  .main-menu li {
+    padding: 30px 0;
+  }
+
+  .main-menu li a {
+    font-size: 30px;
+  }
+
+  .main-menu li {
+    padding: 30px 0;
+  }
 }
   
 /* ==========================================================================
 Responsive CSS Portrait Mobile
 ========================================================================== */
 @media only screen and (min-width: 100px) and (max-width: 560px) {
-
+  .main-menu li {
+    padding: 15px 0;
+  }
 }
   
 /* ==========================================================================
-    Responsive CSS Mobile
+Responsive CSS Mobile
 ========================================================================== */
 @media only screen and (min-width: 100px) and (max-width: 767px) {
     .mobile {
@@ -64,7 +80,9 @@ Responsive CSS Portrait Mobile
     }
   
     #main {
-      padding: 0 15px;
+      padding-top: 67px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   
     .footer {
@@ -79,9 +97,9 @@ Responsive CSS Portrait Mobile
       width: 100%;
       height: 100vh;
       padding: 15px 15px;
-      background-color: #15363ded;
+      background-color: #15363d;
       transition: transform 500ms ease-in-out 25ms;
-      z-index: 1;
+      z-index: 2;
     }
   
     .close-menu {
@@ -115,7 +133,6 @@ Responsive CSS Portrait Mobile
   
     .main-menu li {
       width: 100%;
-      padding: 15px 0;
     }
   
     .not-showmenu {
@@ -126,6 +143,10 @@ Responsive CSS Portrait Mobile
       display: flex;
       justify-content: flex-end;
       padding: 10px;
+      background: linear-gradient(45deg,#18ffff,#c471ed,#f64f59);
+      position: fixed;
+      width: 100%;
+      z-index: 1;
     }
   
     .menu-mobile img {
@@ -140,7 +161,7 @@ Responsive CSS Portrait Mobile
   
     .select-filter {
       width: 100%;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
   
     .gallery {
