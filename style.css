@@ -159,14 +159,15 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 5px;
-  padding-left: 15px;
-  border: 1px solid #fff;
+  padding-right: 10px;
+  padding-left: 0;
+  border: 1px solid rgb(118, 118, 118);
   background-color: rgba(60,60,60,.4);
 }
 
 .input-search {
   color: #fff;
+  padding: 0 15px;
 }
 
 .search img {
