@@ -9,6 +9,13 @@ Responsive CSS Landscape Tablet
     .gallery {
       column-count: 3;
     }
+
+    .left-footer {
+      width: 35%;
+    }
+    .center-footer {
+      width: 35%;
+    }
 }
   
 /* ==========================================================================
@@ -33,6 +40,13 @@ Responsive CSS Portrait Tablet
   
     .wrap-footer {
       padding-bottom: 0;
+    }
+
+    .left-footer {
+      width: 35%;
+    }
+    .center-footer {
+      width: 35%;
     }
 }
   
@@ -153,6 +167,7 @@ Responsive CSS Mobile
     }
 
     .logo-mobile .logo a {
+      font-size: 25px;
       color: #fff;
       background: unset;
       -webkit-background-clip: unset;
