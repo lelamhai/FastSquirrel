@@ -80,7 +80,7 @@ Responsive CSS Mobile
     }
   
     #main {
-      padding-top: 67px;
+      padding-top: 85px;
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -110,13 +110,13 @@ Responsive CSS Mobile
     }
   
     .close-menu img {
-      width: 20px;
+      width: 25px;
     }
   
     .wrap-header .logo {
       margin-bottom: 30px;
     }
-  
+
     .menu {
       width: 100%;
     }
@@ -140,13 +140,22 @@ Responsive CSS Mobile
     }
   
     .menu-mobile {
+      position: fixed;
       display: flex;
       justify-content: flex-end;
-      padding: 10px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px;
       background: linear-gradient(45deg,#18ffff,#c471ed,#f64f59);
-      position: fixed;
       width: 100%;
       z-index: 1;
+    }
+
+    .logo-mobile .logo a {
+      color: #fff;
+      background: unset;
+      -webkit-background-clip: unset;
+      -webkit-text-fill-color:unset;
     }
   
     .menu-mobile img {
