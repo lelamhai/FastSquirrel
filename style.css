@@ -150,7 +150,7 @@ h6 {
 }
 
 .main-menu li a {
-  color: rgb(191, 219, 230);
+  color: #18ffff;
   font-size: 18px;
 }
 
@@ -217,7 +217,7 @@ h6 {
   position: relative;
   cursor: pointer;
   overflow: hidden;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   border-radius: 10px;
   display: inline-block;
 }

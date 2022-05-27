@@ -114,6 +114,7 @@ Responsive CSS Mobile
       background-color: #15363d;
       transition: transform 500ms ease-in-out 25ms;
       z-index: 2;
+      overflow-y: scroll;
     }
   
     .close-menu {
@@ -236,6 +237,10 @@ Responsive CSS Mobile
     .right-footer {
       width: 100%;
       height: 220px;
+    }
+
+    .box {
+      width: 100%;
     }
 }
   
