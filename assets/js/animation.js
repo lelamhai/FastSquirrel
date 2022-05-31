@@ -98,10 +98,7 @@
         var scroll = $(window).scrollTop(),
             elemTop = $(this).offset().top,
             windowHeight = $(window).height();
-
-        if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
-          $(this).addClass('is-animated');
-        }    
+          
         if (scroll > elemTop - windowHeight + 100){
           $(this).addClass('is-animated');
         }
