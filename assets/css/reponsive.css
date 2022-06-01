@@ -275,5 +275,17 @@ Responsive CSS Mobile
       display: block;
       width: 100%;
     }
+
+    .group-footer {
+      padding-bottom: 45px;
+    }
+
+    .title-column {
+      padding-bottom: 20px;
+    }
+
+    .menu-footer li {
+      padding-bottom: 10px;
+    }
 }
   

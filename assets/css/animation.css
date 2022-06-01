@@ -44,7 +44,7 @@
 }
 @keyframes fadeup {
   0% {
-    transform: translateY(30px);
+    transform: translateY(100%);
     opacity: 0;
   }
   80% {
