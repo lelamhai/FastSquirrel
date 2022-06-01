@@ -16,6 +16,9 @@ Responsive CSS Landscape Tablet
     .center-footer {
       width: 35%;
     }
+    .right-footer {
+      width: 30%;
+    }
 }
   
 /* ==========================================================================
@@ -28,6 +31,10 @@ Responsive CSS Portrait Tablet
   
     .logo a {
       font-size: 30px;
+    }
+
+    .input-search {
+      width: 130px;
     }
   
     .main-menu li {
@@ -47,6 +54,12 @@ Responsive CSS Portrait Tablet
     }
     .center-footer {
       width: 35%;
+    }
+    .right-footer {
+      width: 30%;
+    }
+    .wrap-planet img {
+      width: 350px;
     }
 }
   
@@ -77,6 +90,11 @@ Responsive CSS Portrait Mobile
 @media only screen and (min-width: 100px) and (max-width: 560px) {
   .main-menu li {
     padding: 15px 0;
+  }
+
+  .wrap-planet img {
+    width: 300px;
+    height: auto;
   }
 }
   
@@ -213,11 +231,28 @@ Responsive CSS Mobile
       display: flex;
       width: 100%;
     }
+
+    .box {
+      width: 100%;
+    }
   
     .gallery {
       column-count: 1;
     }
+
+    .wrap-planet {
+      display: none;
+    }
+
+    .wrap-planet img {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
   
+    .footer-support {
+      padding-bottom: 30px !important;
+    }
+
     .wrap-footer {
       flex-direction: column;
       padding-bottom: 0;
@@ -237,11 +272,7 @@ Responsive CSS Mobile
     }
   
     .right-footer {
-      width: 100%;
-      height: 220px;
-    }
-
-    .box {
+      display: block;
       width: 100%;
     }
 }
