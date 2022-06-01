@@ -106,6 +106,10 @@ h6 {
     display: none;
 }
 
+.bg-black {
+  background-color: #000;
+}
+
 .background-image {
   min-height: 100vh;
   overflow-x: hidden;
@@ -368,4 +372,57 @@ h6 {
 
 .hr-copyright {
   margin-bottom: 30px;
+}
+
+/* Chat Live */
+.chat-support {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 2;
+}
+.menu-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  right: 0;
+  display: table;
+  text-align: center;
+}
+
+.btn-app {
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+}
+
+.menu-round {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
+.menu-round .btn-app {
+  bottom: 1em;
+  right: 1em;
+  transition: 0.4s;
+}
+.menu-round.open .btn-app:nth-of-type(1) {
+  right: 0.5em;
+  bottom: 4.5em;
+  transition-delay: 0.2s;
+}
+.menu-round.open .btn-app:nth-of-type(2) {
+  right: 3.5em;
+  bottom: 3.5em;
+  transition-delay: 0.1s;
+}
+.menu-round.open .btn-app:nth-of-type(3) {
+  right: 4.25em;
+  bottom: 0.5em;
 }
