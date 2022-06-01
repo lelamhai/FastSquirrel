@@ -253,6 +253,10 @@ Responsive CSS Mobile
       padding-bottom: 30px !important;
     }
 
+    .footer-address {
+      padding-bottom: 0 !important;
+    }
+
     .wrap-footer {
       flex-direction: column;
       padding-bottom: 0;
