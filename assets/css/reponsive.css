@@ -45,6 +45,11 @@ Responsive CSS Portrait Tablet
       font-size: 16px;
     }
   
+    .planet {
+      bottom: -10%;
+      right: -30%;
+    }
+
     .wrap-footer {
       padding-bottom: 0;
     }
@@ -58,7 +63,7 @@ Responsive CSS Portrait Tablet
     .right-footer {
       width: 30%;
     }
-    .wrap-planet img {
+    .wrap-astronaut img {
       width: 350px;
     }
 }
@@ -92,7 +97,7 @@ Responsive CSS Portrait Mobile
     padding: 15px 0;
   }
 
-  .wrap-planet img {
+  .wrap-astronaut img {
     width: 300px;
     height: auto;
   }
@@ -240,11 +245,12 @@ Responsive CSS Mobile
       column-count: 1;
     }
 
-    .wrap-planet {
+    .planet,
+    .wrap-astronaut {
       display: none;
     }
 
-    .wrap-planet img {
+    .wrap-astronaut img {
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
     }
