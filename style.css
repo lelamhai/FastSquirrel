@@ -261,6 +261,10 @@ h6 {
   display: inline-block;
 }
 
+.wrap-box  img {
+  object-fit: cover;
+}
+
 .frame-box {
   position: absolute;
   top: 0;
