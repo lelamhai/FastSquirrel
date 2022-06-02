@@ -1,10 +1,14 @@
 @media not all and (min-resolution:.001dpcm) { 
     @supports (-webkit-appearance: none) {
-       .mas {
+      .mas {
           color: #fff;
           background: unset !important;
           -webkit-background-clip: unset !important;
           -webkit-text-fill-color: unset !important;
-       }
+      }
+
+      .main-menu {
+         -webkit-text-fill-color: unset !important;
+      }
     }
  }
