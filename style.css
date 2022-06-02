@@ -61,6 +61,19 @@ input[type="button"] {
   -webkit-appearance: none;
 }
 
+::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}
+
 
 textarea {
   resize: vertical;
