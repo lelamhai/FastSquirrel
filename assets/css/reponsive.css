@@ -6,7 +6,7 @@ Responsive CSS Landscape Tablet
       padding-left: 30px;
     }
   
-    .gallery {
+    .wrap-gallery {
       column-count: 3;
     }
 
@@ -25,7 +25,7 @@ Responsive CSS Landscape Tablet
 Responsive CSS Portrait Tablet
 ========================================================================== */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-    .gallery {
+    .wrap-gallery {
       column-count: 2;
     }
   
@@ -236,7 +236,7 @@ Responsive CSS Mobile
       width: 100%;
     }
   
-    .gallery {
+    .wrap-gallery {
       column-count: 1;
     }
 
