@@ -36,9 +36,9 @@
 }
 
 
-.select-filter {
+/* .select-filter {
   color: red;
-}
+} */
 .fadeup {
   opacity: 0;
 }
@@ -47,7 +47,7 @@
 }
 @keyframes fadeup {
   0% {
-    transform: translateY(0);
+    transform: translateY(10px);
     opacity: 0;
   }
   80% {
