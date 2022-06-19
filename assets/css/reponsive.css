@@ -244,6 +244,11 @@ Responsive CSS Mobile
     .wrap-gallery {
       column-count: 1;
     }
+    
+    .top-box,
+    .bottom-box {
+      transform: translateY(0);
+    }
 
     .planet,
     .wrap-astronaut {
