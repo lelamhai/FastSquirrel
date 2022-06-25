@@ -117,7 +117,7 @@ Responsive CSS Mobile
     }
   
     #main {
-      padding-top: 85px;
+      padding-top: 50px;
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -301,6 +301,24 @@ Responsive CSS Mobile
 
     .menu-footer li {
       padding-bottom: 20px;
+    }
+
+    /* Detail */
+    .frame-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .column {
+      width: 100%;
+    }
+
+    .column-right {
+      padding-left: 0;
+    }
+
+    .detail-title {
+      font-size: 24px;
     }
 }
   

@@ -13,4 +13,18 @@ $(document).ready(function(){
         $(".menu-toggle").toggleClass('open');
         $(".menu-round").toggleClass('open');
      });
+
+     // Favourite
+    $('.box a').click(function (e) {
+        let text = $(event.target).attr('class');
+        if(text)
+        {
+           let listClass = text.split(" ");
+           if(listClass[0] === "favourite")
+           {
+              $(e.target).toggleClass("icon-minus"); 
+              return false;
+           }
+        }
+    });
 });

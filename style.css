@@ -564,8 +564,6 @@ h6 {
   color: rgba(255,255,255,0.6);
   padding-bottom: 5px;
   list-style-type: disc;
-  margin-left: 20px;
-  padding-left: 5px;
 }
 
 .copyright {
@@ -631,4 +629,108 @@ h6 {
 .menu-round.open .btn-app:nth-of-type(3) {
   right: 4.25em;
   bottom: 0.5em;
+}
+
+/* ================================== Detail =============================== */
+.slide-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.slide-btn {
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.wrap-main {
+  background: rgba(60,60,60,.4);
+  border-radius: 20px;
+  margin: 45px 0;
+  box-shadow: 0 0 40px 10px rgb(85 85 85 / 85%);
+}
+
+.frame-column {
+  display: flex;
+  padding: 30px;
+}
+
+.column {
+  width: 50%;
+}
+
+.column-left {
+  padding-right: 15px;
+}
+
+.column-right {
+  padding-left: 15px;
+}
+
+.detail-title {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Roboto-Bold';
+  background: linear-gradient(45deg,#18ffff,#c471ed,#f64f59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 5px;
+}
+
+.detail-system {
+  display: flex;
+  padding-bottom: 45px;
+}
+
+.detail-system-item {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.detail-system-item img {
+  width: 18px;
+  height: auto;
+  margin-right: 5px;
+}
+
+.detail-system-item span {
+  color: #fff;
+  font-size: 12px;
+}
+
+.detail-wrap-content {
+  padding-bottom: 45px;
+  margin-left: 15px;
+}
+
+.detail-item-content {
+  color: #fff;
+  padding-bottom: 15px;
+  list-style-type: disc;
+  padding-left: 5px;
+}
+
+.detail-wrap-buy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-buy {
+  background: linear-gradient(45deg,#18ffff,#c471ed,#f64f59);
+  padding: 15px 30px;
+  border-radius: 15px;
+}
+
+.detail-buy a {
+  font-size: 18px;
+  color: #fff;
+}
+
+.detail-price {
+  background: linear-gradient(45deg,#18ffff,#c471ed,#f64f59);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
 }
