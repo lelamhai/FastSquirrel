@@ -560,6 +560,11 @@ h6 {
   padding-bottom: 15px;  
 }
 
+.menu-footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .menu-footer li {
   color: rgba(255,255,255,0.6);
   padding-bottom: 5px;
