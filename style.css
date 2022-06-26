@@ -650,7 +650,7 @@ h6 {
 .wrap-main-detail {
   background: rgba(60,60,60,.4);
   border-radius: 20px;
-  box-shadow: 0 0 40px 10px rgb(85 85 85 / 85%);
+  box-shadow: 0 0 25px 10px rgb(85 85 85 / 85%);
   margin-top: 45px;
   margin-bottom: 55px;
 }
@@ -744,4 +744,62 @@ h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 18px;
+}
+
+.wrap-stepbystep {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+}
+
+.stepbuystep-item {
+  width: 20%;
+}
+
+.wrap-item-stepbystep{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.stepbystep-circle {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid yellow;
+}
+
+.stepbystep-circle img {
+  width: 40px;
+  height: auto;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%,-50%);
+}
+
+.stepbystep-line {
+  width: calc(100% - 80px);
+  height: 2px;
+  background-color: red;
+}
+
+.stepbuystep-item:last-child {
+  width: 80px;
+}
+
+.stepbuystep-item:last-child .stepbystep-line {
+  background-color: red;
+  width: 0;
+}
+
+.stepbystep-title {
+  color: #fff;
+  font-size: 12px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

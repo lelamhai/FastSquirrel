@@ -4,13 +4,18 @@
       <title>Fast Squirrel</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="./style.css?v=114">
-      <link rel="stylesheet" href="./assets/css/responsive.css?v=91">
+      <link rel="stylesheet" href="./style.css?v=117">
+      <link rel="stylesheet" href="./assets/css/responsive.css?v=103">
       <link rel="stylesheet" href="./assets/css/animation.css?v=101">
       <link rel="stylesheet" href="./assets/css/browser.css?v=4">
       <link rel="stylesheet" href="./assets/css/fonts.css">
       <link rel="stylesheet" href="./assets/slick/slick.css">
       <link rel="stylesheet" href="./assets/slick/slick-theme.css">
+      <!-- <style>
+         .detail-system-item:hover img {
+            filter: grayscale(10);
+         }
+      </style> -->
    </head>
    <body>
       <main>
@@ -148,7 +153,7 @@
                                  <div class="detail-wrap-buy">
                                     <div class="button-load-1 detail-buy">
                                        <a href="#stepbystep">
-                                          <span class="mas">Đặt hàng</span>
+                                          <span class="mas">Đặt Hàng</span>
                                           <button type="button" name="Hover">Đặt Hàng</button>
                                        </a>
                                     </div>
@@ -161,10 +166,63 @@
                               </div>
                            </div>
                         </section>
-                        
+                     </div>
+
+                     <div class="footer-hr anim left-right js-anim mobile"></div>
+
+                     <div class="wrap-main-detail">
                         <section id="stepbystep">
                            <div class="wrap-stepbystep">
-                              lelamhai
+                              <div class="stepbuystep-item">
+                                 <div class="wrap-item-stepbystep">
+                                    <div class="stepbystep-circle">
+                                       <img src="./assets/imgs/icons/icon-zoom.png" alt="">
+                                    </div>
+                                    <div class="stepbystep-line"></div>
+                                 </div>
+                                 <div class="stepbystep-title">Gửi ảnh</div>
+                              </div>
+
+                              <div class="stepbuystep-item">
+                                 <div class="wrap-item-stepbystep">
+                                    <div class="stepbystep-circle">
+                                       <img src="./assets/imgs/icons/icon-zoom.png" alt="">
+                                    </div>
+                                    <div class="stepbystep-line"></div>
+                                 </div>
+                                 <div class="stepbystep-title">Đợi duyệt</div>
+                              </div>
+
+                              <div class="stepbuystep-item">
+                                 <div class="wrap-item-stepbystep">
+                                    <div class="stepbystep-circle">
+                                       <img src="./assets/imgs/icons/icon-zoom.png" alt="">
+                                    </div>
+                                    <div class="stepbystep-line"></div>
+                                 </div>
+                                 <div class="stepbystep-title">Thanh toán</div>
+                              </div>
+
+                              <div class="stepbuystep-item">
+                                 <div class="wrap-item-stepbystep">
+                                    <div class="stepbystep-circle">
+                                       <img src="./assets/imgs/icons/icon-zoom.png" alt="">
+                                    </div>
+                                    <div class="stepbystep-line"></div>
+                                 </div>
+                                 <div class="stepbystep-title">Photoshop</div>
+                              </div>
+
+                              <div class="stepbuystep-item">
+                                 <div class="wrap-item-stepbystep">
+                                    <div class="stepbystep-circle">
+                                       <img src="./assets/imgs/icons/icon-zoom.png" alt="">
+                                    </div>
+                                    <div class="stepbystep-line"></div>
+                                 </div>
+                                 <div class="stepbystep-title">Thành công</div>
+                              </div>
+                             
                            </div>
 
                            <div class="frame-column detail-stepbystep">
@@ -178,6 +236,7 @@
                            </div>
                         </section>
                      </div>
+
                   </div>
                   <div id="footer">
                      <div class="wrap-astronaut anim poyopoyo js-anim">
@@ -285,12 +344,12 @@
                slidesToShow: 3,
                slidesToScroll: 1,
                asNavFor: '.slider-for',
-               dots: true,
+               dots: false,
                centerMode: true,
                focusOnSelect: true,
                responsive: [
                   {
-                     breakpoint: 766,
+                     breakpoint: 959,
                      settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
