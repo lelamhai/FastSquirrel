@@ -88,26 +88,30 @@ Responsive CSS Landscape Mobile
     padding: 30px 0;
   }
 
-  .stepbystep-circle {
-    width: 60px !important;
-    height: 60px !important;
-  }
-
   .stepbystep-circle img {
-    width: 30px !important;
+    width: 20px;
   }
 
-  .stepbystep-line { 
-    width: calc(100% - 60px) !important;
+  .stepbuystep-item:last-child .stepbystep-circle img {
+    width: 45px;
   }
 
-  .stepbuystep-item:last-child {
-    width: 60px !important;
+  .stepbystep-circle {
+    width: 60px;
+    height: 60px;
   }
 
   .stepbystep-title {
-    font-size: 11px !important;
-    width: 60px !important;
+    width: 60px;
+    font-size: 11px;
+  }
+
+  .stepbystep-line { 
+    width: calc(100% - 60px);
+  }
+
+  .stepbuystep-item:first-child {
+    width: 60px;
   }
 }
   
@@ -124,26 +128,30 @@ Responsive CSS Portrait Mobile
     height: auto;
   }
 
-  .stepbystep-circle {
-    width: 35px !important;
-    height: 35px !important;
-  }
-
   .stepbystep-circle img {
-    width: 20px !important;
+    width: 15px;
   }
 
-  .stepbystep-line { 
-    width: calc(100% - 35px) !important;
+  .stepbuystep-item:last-child .stepbystep-circle img {
+    width: 30px;
   }
 
-  .stepbuystep-item:last-child {
-    width: 35px !important;
+  .stepbystep-circle {
+    width: 40px;
+    height: 40px;
   }
 
   .stepbystep-title {
-    font-size: 6px !important;
-    width: 35px !important;
+    width: 40px;
+    font-size: 6px;
+  }
+
+  .stepbystep-line { 
+    width: calc(100% - 40px);
+  }
+
+  .stepbuystep-item:first-child {
+    width: 40px;
   }
 }
   
