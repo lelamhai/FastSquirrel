@@ -642,11 +642,12 @@ h6 {
   cursor: pointer;
 }
 
-.wrap-main {
+.wrap-main-detail {
   background: rgba(60,60,60,.4);
   border-radius: 20px;
-  margin: 45px 0;
   box-shadow: 0 0 40px 10px rgb(85 85 85 / 85%);
+  margin-top: 45px;
+  margin-bottom: 55px;
 }
 
 .frame-column {
@@ -718,6 +719,11 @@ h6 {
 }
 
 .detail-buy {
+    margin: unset;
+    width: 150px;
+}
+
+/* .detail-buy {
   background: linear-gradient(45deg,#18ffff,#c471ed,#f64f59);
   padding: 15px 30px;
   border-radius: 15px;
@@ -726,7 +732,7 @@ h6 {
 .detail-buy a {
   font-size: 18px;
   color: #fff;
-}
+} */
 
 .detail-price {
   background: linear-gradient(45deg,#18ffff,#c471ed,#f64f59);

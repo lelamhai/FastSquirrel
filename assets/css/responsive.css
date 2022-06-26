@@ -121,6 +121,10 @@ Responsive CSS Mobile
       padding-left: 15px;
       padding-right: 15px;
     }
+
+    .wrap-main-home {
+      padding-top: 45px;
+    }
   
     .footer {
       padding: 0 15px;
@@ -299,14 +303,36 @@ Responsive CSS Mobile
       padding-bottom: 20px;
     }
 
+    .menu-footer {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
     .menu-footer li {
       padding-bottom: 20px;
     }
 
     /* Detail */
+    .sld-wrp .slick-prev {
+      left: 0;
+      z-index: 1;
+    }
+
+    .sld-wrp .slick-next {
+      right: 0;
+      z-index: 1;
+    }
+
+    .wrap-main-detail {
+      background: unset;
+      border-radius: 0;
+      box-shadow: unset;
+    }
+
     .frame-column {
       display: flex;
       flex-direction: column;
+      padding: 0;
     }
 
     .column {
@@ -317,8 +343,17 @@ Responsive CSS Mobile
       padding-left: 0;
     }
 
+    .column-left {
+      padding-right: 0;
+    }
+
     .detail-title {
       font-size: 24px;
+    }
+
+    .detail-buy {
+      width: 120px;
+      height: 45px;
     }
 }
   
