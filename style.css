@@ -70,6 +70,9 @@ input[type="button"] {
   color: #fff;
 }
 
+input:focus::placeholder {
+  color: transparent;
+}
 
 textarea {
   resize: vertical;

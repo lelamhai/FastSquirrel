@@ -4,7 +4,7 @@
       <title>Fast Squirrel</title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="./style.css?v=126">
+      <link rel="stylesheet" href="./style.css?v=115">
       <link rel="stylesheet" href="./assets/css/responsive.css?v=110">
       <link rel="stylesheet" href="./assets/css/animation.css?v=101">
       <link rel="stylesheet" href="./assets/css/browser.css?v=4">
@@ -224,14 +224,196 @@
                                     </div>
                                     
                                  </div>
-                                 <div class="stepbystep-title">Thành công</div>
+                                 <div class="stepbystep-title">Hoàn thành</div>
                               </div>
                              
                            </div>
 
+                           <style>
+                              .form {
+                                 position: relative;
+                                 width: 100%;
+                                 height: 45px;
+                              }
+                              .form .form__input {
+                                 position: absolute;
+                                 top: 0;
+                                 left: 0;
+                                 width: 100%;
+                                 height: 100%;
+                                 border: 2px solid #e1e5ee;
+                                 border-radius: 5px;
+                                 font-family: inherit;
+                                 font-size: inherit;
+                                 color: white;
+                                 outline: none;
+                                 padding: 1.25rem;
+                                 background: none;
+                                 /* Change border when input focus*/
+                              }
+                              .form .form__input:hover {
+                                 border-color: #adffff;
+                              }
+                              .form .form__input:focus {
+                                 border-color: #18ffff;
+                              }
+                              .form .form__label {
+                                 position: absolute;
+                                 left: 15px;
+                                 top: 0.9rem;
+                                 color: white;
+                                 cursor: text;
+                                 transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+                                 background-color: #060b23;
+                              }
+                              /* 1. When the input is in the focus state reduce the size of the label and move upwards 2. Keep label state when content is in input field */
+                              .form__input:focus ~ .form__label, .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+                                 top: -0.5rem;
+                                 font-size: 0.8rem;
+                                 left: 0.8rem;
+                              }
+
+                              .wrap-input-detail {
+                                 margin-bottom: 20px;
+                              }
+
+                              .choose-img {
+                                 width: 110px;
+                                 height: 100%;
+                                 background: linear-gradient(45deg,#18ffff,#c471ed,#f64f59);
+                                 border: 0;
+                                 color: #fff;
+                                 cursor: pointer;
+                                 border-radius: 5px;
+                              }
+
+                              .file-name {
+                                 width: calc(100% - 120px);
+                                 height: 100%;
+                                 color: #fff;
+                                 padding-left: 10px;
+                              }
+
+                              .form-file {
+                                 border: 1px solid #fff;
+                                 border-radius: 5px;
+                              }
+
+                              .form-captcha {
+                                 border: 1px solid #fff;
+                                 border-radius: 5px;
+                                 display: flex;
+                                 align-items: center;
+                                 padding: 0 15px;
+                              }
+
+                              #captcha {
+                                 background-image: url(./assets/imgs/captcha-bg.png);
+                                 height: 100%;
+                              }
+
+                              #reset-captcha img {
+                                 width: 32px;
+                                 height: auto;
+                              }
+
+                              .text-robot {
+                                 padding-bottom: 20px;
+                                 text-align: center;
+                                 background: linear-gradient(45deg,#18ffff,#c471ed,#f64f59);
+                                 -webkit-background-clip: text;
+                                 -webkit-text-fill-color: transparent;
+                              }
+
+                              .form-captcha {
+                                 padding: 0;
+                              }
+
+                              .form-captcha input {
+                                 width: 100%;
+                                 text-align: center;
+                                 letter-spacing: 15px;
+                              }
+
+                              .form-captcha button {
+                                 position: absolute;
+                                 right: 0;
+                                 padding-right: 15px;
+                              }
+
+                              .wrap-input-submit {
+                                 display: flex;
+                                 justify-content: center;
+                              }
+                           </style>
+
                            <div class="frame-column detail-stepbystep">
                               <div class="column column-left">
-                                 left
+                                 <div class="wrap-file">
+
+                                    <div class="wrap-input-detail">
+                                       <div class="form">
+                                          <input type="text" id="fullname" class="form__input" placeholder=" ">
+                                          <label for="fullname" class="form__label">Họ và tên</label>
+                                       </div>
+                                       <div class="error">Error</div>
+                                    </div>
+
+                                    <div class="wrap-input-detail">
+                                       <div class="form">
+                                          <input type="tel" id="numberphone" class="form__input" placeholder=" ">
+                                          <label for="numberphone" class="form__label">Số điện thoại</label>
+                                       </div>
+                                       <div class="error">Error</div>
+                                    </div>
+
+                                    <div class="wrap-input-detail">
+                                       <div class="form">
+                                          <input type="email" id="email" class="form__input" placeholder=" ">
+                                          <label for="email" class="form__label">Email</label>
+                                       </div>
+                                       <div class="error">Error</div>
+                                    </div>
+
+
+                                    <div class="wrap-input-detail">
+                                       <div class="form form-file">
+                                          <input type="file" id="myfile" name="myfile" accept="image/*" hidden>
+                                          <input class="choose-img" type="button" value="Chọn hình">
+                                          <input class="file-name" type="text" value="File hình" readonly>
+                                       </div>
+                                       <div class="error">Error</div>
+                                    </div>
+
+                                    <div class="text-robot">
+                                       Bạn có phải là robot không? Bạn hãy nhập chuỗi bảo mật ở phía dưới.
+                                    </div>
+
+                                    <div class="wrap-input-detail">
+                                       <div class="form form-captcha">
+                                          <input type="text" id="captcha" value="123456789" readonly>
+                                          <button id="reset-captcha"><img src="./assets/imgs/icons/icon_undo.png" alt=""></button>
+                                       </div>
+                                    </div>
+
+
+                                    <div class="wrap-input-detail">
+                                       <div class="form">
+                                          <input type="tel" id="security" class="form__input" placeholder=" ">
+                                          <label for="security" class="form__label">Chuỗi bảo mật</label>
+                                       </div>
+                                       <div class="error">Error</div>
+                                    </div>
+
+
+                                    <div class="wrap-input-detail wrap-input-submit">
+                                       <div class="button-load-1 detail-buy">
+                                          <span class="mas">Gửi</span>
+                                          <button type="button" name="Hover">Gửi</button>
+                                       </div>
+                                    </div>
+                                    
+                                 </div>
                               </div>
       
                               <div class="column column-right">
@@ -361,6 +543,15 @@
                   }
                ]
             });
+         });
+
+         $(".choose-img").click(function(e){
+            e.preventDefault();
+            $('#myfile').trigger('click');
+
+            $('input[type=file]').change(function () {
+                  $('.file-name').val(this.files[0]['name']);
+            })
          });
        </script>
    </body>
